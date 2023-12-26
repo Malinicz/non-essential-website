@@ -1,5 +1,7 @@
 {
   "server-component": {
+    "title": "Non-Essential Workers",
+    "description": "Non-Essential Workers band website",
     "welcome": "Welcome"
   }
 }

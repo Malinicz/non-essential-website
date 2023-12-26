@@ -13,7 +13,8 @@ export default async function Page({
 
   return (
     <main>
-      <h1>Hello, Next.js!</h1>
+      <h1>N.E.W. IMPOSSIBLE SINGLE FROM DEBUT EP OUT NOW</h1>
+      <h2>HEY YOU! LISTEN...</h2>
       <p>Current locale: {lang}</p>
       <p>
         This text is rendered on the server:{" "}

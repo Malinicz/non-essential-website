@@ -1,5 +1,3 @@
-"use client";
-
 import styles from "./BandCampPlugin.module.css";
 
 const ALBUM_URL = {

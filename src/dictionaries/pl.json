@@ -1,5 +1,7 @@
 {
   "server-component": {
+    "title": "Non-Essential Workers",
+    "description": "Strona internetowa zespołu Non-Essential Workers",
     "welcome": "Witaj!"
   }
 }
