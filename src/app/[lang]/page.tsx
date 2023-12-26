@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import LocaleSwitcher from "./components/locale-switcher";
+import { LocaleSwitcher, BandCampPlugin } from "./components";
 import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
 
@@ -20,6 +20,7 @@ export default async function Page({
         {dictionary["server-component"].welcome}
       </p>
       <LocaleSwitcher />
+      <BandCampPlugin album="impossible" />
     </main>
   );
 }
