@@ -1,19 +1,23 @@
-import type { Metadata, ResolvingMetadata } from "next";
+import type { Metadata } from "next";
 import cx from "classnames";
 import { Locale, i18n } from "@/i18n-config";
 import { futuraFont, antonFont } from "@/fonts";
 import { getDictionary } from "@/get-dictionary";
+import styles from "./layout.module.css";
 import "./globals.css";
+import { LocaleSwitcher } from "./components";
 
-export async function generateMetadata(
-  { params }: PropsType,
-  parent: ResolvingMetadata
-): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PropsType): Promise<Metadata> {
   const dictionary = await getDictionary(params.lang);
 
   return {
-    title: dictionary["server-component"].title,
-    description: dictionary["server-component"].description,
+    title: dictionary.websiteTitle,
+    description: dictionary.websiteDescription,
+    icons: {
+      icon: "./favicon.ico",
+    },
   };
 }
 
@@ -27,12 +31,23 @@ type PropsType = Readonly<{
 }>;
 
 export default function RootLayout({ children, params }: PropsType) {
+  const currentYear = new Date().getFullYear();
+
   return (
     <html
       lang={params.lang}
       className={cx(futuraFont.variable, antonFont.variable)}
     >
-      <body>{children}</body>
+      <body>
+        <div className={styles.layout}>
+          <header className={styles.header}>
+            <LocaleSwitcher />
+          </header>
+          <aside className={styles.aside}>NON-ESSENTIAL WORKERS</aside>
+          <main className={styles.main}>{children}</main>
+          <footer className={styles.footer}>ⓒ N.E.W. {currentYear}</footer>
+        </div>
+      </body>
     </html>
   );
 }

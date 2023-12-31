@@ -1,7 +1,16 @@
 {
-  "server-component": {
-    "title": "Non-Essential Workers",
-    "description": "Non-Essential Workers band website",
-    "welcome": "Welcome"
+  "websiteTitle": "Non-Essential Workers",
+  "websiteDescription": "Non-Essential Workers band website",
+  "home": {
+    "heading": "N.E.W. Impossible single from debut EP 'First Shift' out now",
+    "subheading1": "Hey, listen...",
+    "subheading2": "...we'd like to hear from you too",
+    "streamingServicesDescription": "Available on all music platforms.",
+    "userFormDescription": "Our music simply wouldn't exist without you. Drop us a message below to say hi or share your thoughts about our music.",
+    "form": {
+      "messageLabel": "message",
+      "messagePlaceholder": "Say hi, tell us what you like or dislike, or just tell us a joke.",
+      "submitButton": "Submit"
+    }
   }
 }

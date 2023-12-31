@@ -1,0 +1,13 @@
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list > * + * {
+  margin-left: 12px !important;
+}
+
+.listItem {
+  text-transform: uppercase;
+}

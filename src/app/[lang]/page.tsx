@@ -1,8 +1,11 @@
-import Image from "next/image";
+import React from "react";
+import cx from "classnames";
 import styles from "./page.module.css";
-import { LocaleSwitcher, BandCampPlugin } from "./components";
+import { BandCampPlugin } from "./components";
 import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
+import { StreamingServicesList } from "./components/StreamingServicesList";
+import { UserForm } from "./components/UserForm";
 
 export default async function Page({
   params: { lang },
@@ -12,16 +15,27 @@ export default async function Page({
   const dictionary = await getDictionary(lang);
 
   return (
-    <main>
-      <h1>N.E.W. IMPOSSIBLE SINGLE FROM DEBUT EP OUT NOW</h1>
-      <h2>HEY YOU! LISTEN...</h2>
-      <p>Current locale: {lang}</p>
-      <p>
-        This text is rendered on the server:{" "}
-        {dictionary["server-component"].welcome}
-      </p>
-      <LocaleSwitcher />
-      <BandCampPlugin album="impossible" />
-    </main>
+    <div className={styles.mainLayout}>
+      <div className={styles.heading}>
+        <h1>{dictionary.home.heading}</h1>
+      </div>
+      <div className={styles.column1}>
+        <section>
+          <h2>{dictionary.home.subheading1}</h2>
+          <p>{dictionary.home.streamingServicesDescription}</p>
+          <StreamingServicesList />
+        </section>
+        <section>
+          <div>
+            <h2>{dictionary.home.subheading2}</h2>
+            <p>{dictionary.home.userFormDescription}</p>
+          </div>
+          <UserForm copy={dictionary.home.form} />
+        </section>
+      </div>
+      <div className={styles.column2}>
+        <BandCampPlugin album="impossible" />
+      </div>
+    </div>
   );
 }

@@ -3,9 +3,11 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { i18n } from "@/i18n-config";
+import styles from "./LocaleSwitcher.module.css";
 
 export function LocaleSwitcher() {
   const pathName = usePathname();
+
   const redirectedPathName = (locale: string) => {
     if (!pathName) return "/";
     const segments = pathName.split("/");
@@ -14,17 +16,14 @@ export function LocaleSwitcher() {
   };
 
   return (
-    <div>
-      <p>Locale switcher:</p>
-      <ul>
-        {i18n.locales.map((locale) => {
-          return (
-            <li key={locale}>
-              <Link href={redirectedPathName(locale)}>{locale}</Link>
-            </li>
-          );
-        })}
-      </ul>
-    </div>
+    <ul className={styles.list}>
+      {i18n.locales.map((locale) => {
+        return (
+          <li key={locale} className={styles.listItem}>
+            <Link href={redirectedPathName(locale)}>{locale}</Link>
+          </li>
+        );
+      })}
+    </ul>
   );
 }

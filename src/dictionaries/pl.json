@@ -1,7 +1,16 @@
 {
-  "server-component": {
-    "title": "Non-Essential Workers",
-    "description": "Strona internetowa zespołu Non-Essential Workers",
-    "welcome": "Witaj!"
+  "websiteTitle": "Non-Essential Workers",
+  "websiteDescription": "Strona internetowa zespołu Non-Essential Workers",
+  "home": {
+    "heading": "Nowy singiel Impossible z debiutanckiej EP-ki już dostępny!",
+    "subheading1": "Hej, posłuchaj...",
+    "subheading2": "...chcemy też usłyszeć coś od ciebie",
+    "streamingServicesDescription": "Available on all music platforms.",
+    "userFormDescription": "Our music simply wouldn't exist without you. Drop us a message below to say hi or share your thoughts about our music.",
+    "form": {
+      "messageLabel": "message",
+      "messagePlaceholder": "Say hi, tell us what you like or dislike, or just tell us a joke.",
+      "submitButton": "Submit"
+    }
   }
 }
