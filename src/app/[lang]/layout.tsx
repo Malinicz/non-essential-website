@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import cx from "classnames";
 import { Locale, i18n } from "@/i18n-config";
 import { futuraFont, antonFont } from "@/fonts";
@@ -6,6 +7,7 @@ import { getDictionary } from "@/get-dictionary";
 import styles from "./layout.module.css";
 import "./globals.css";
 import { LocaleSwitcher } from "./components";
+import { getNavigation, getNavigationList } from "@/utils";
 
 export async function generateMetadata({
   params,
@@ -30,8 +32,11 @@ type PropsType = Readonly<{
   params: { lang: Locale };
 }>;
 
-export default function RootLayout({ children, params }: PropsType) {
+export default async function RootLayout({ children, params }: PropsType) {
   const currentYear = new Date().getFullYear();
+  const dictionary = await getDictionary(params.lang);
+  const navigation = getNavigation(params.lang, dictionary);
+  const navigationList = getNavigationList(params.lang, dictionary);
 
   return (
     <html
@@ -43,7 +48,24 @@ export default function RootLayout({ children, params }: PropsType) {
           <header className={styles.header}>
             <LocaleSwitcher />
           </header>
-          <aside className={styles.aside}>NON-ESSENTIAL WORKERS</aside>
+          <aside className={styles.aside}>
+            <div>
+              <Link href={navigation.home.url} className={styles.homeLink}>
+                NON-ESSENTIAL WORKERS
+              </Link>
+            </div>
+            <nav>
+              <ul className={styles.navigationList}>
+                {navigationList.map((item) => (
+                  <li key={item.id} className={styles.navigationListItem}>
+                    <Link key={item.id} href={item.url}>
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </aside>
           <main className={styles.main}>{children}</main>
           <footer className={styles.footer}>ⓒ N.E.W. {currentYear}</footer>
         </div>

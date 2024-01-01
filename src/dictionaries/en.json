@@ -16,5 +16,12 @@
       "submitButton": "Submit",
       "checkboxLabel": "I want to leave my email to get exclusive content (opt-out anytime)"
     }
+  },
+  "navigation": {
+    "home": "home",
+    "bio": "bio",
+    "music": "music",
+    "videos": "videos",
+    "contact": "contact"
   }
 }
