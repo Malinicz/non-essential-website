@@ -26,7 +26,7 @@ export default async function Page({
           <StreamingServicesList />
         </section>
         <section>
-          <div>
+          <div className={styles.formSectionText}>
             <h2>{dictionary.home.subheading2}</h2>
             <p>{dictionary.home.userFormDescription}</p>
           </div>

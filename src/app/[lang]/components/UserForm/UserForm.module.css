@@ -12,9 +12,34 @@
   border: none;
   border-bottom: 1px solid #000;
   min-height: 40px;
+  resize: none;
+  overflow: hidden;
+}
+
+.userFormInputError {
+  border-bottom: 1px solid #ff0000b8;
+}
+
+.userFormInputErrorText {
+  color: #ff0000b8;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.userFormCheckbox {
+  display: flex;
+  align-items: center;
+}
+
+.userFormCheckboxIcon {
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
 }
 
 .submitButton {
+  display: flex;
+  align-items: center;
   background: #000;
   color: #fff;
   border: none;
@@ -22,4 +47,22 @@
   min-height: 40px;
   border-radius: 8px;
   text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.submitButton:hover {
+  opacity: 0.8;
+}
+
+.submitButton:disabled {
+  background: #a0a0a0;
+  pointer-events: none;
+}
+
+.submitButton:active {
+  transform: scale(0.95);
+}
+
+.submitButton > svg {
+  margin-right: 8px;
 }

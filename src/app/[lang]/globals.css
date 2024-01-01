@@ -86,3 +86,19 @@ button {
   outline: inherit;
   min-height: 0;
 }
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeInAnimation;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-out;
+}

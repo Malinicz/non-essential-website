@@ -1,26 +1,15 @@
 .streamingServicesList {
   display: flex;
-}
-
-.streamingServicesListExpanded {
-  display: flex;
-  flex-direction: column;
-}
-
-.streamingServicesListExpanded > .streamingServicesListItem {
-  margin-left: 0;
-  padding-bottom: 8px;
-}
-
-.streamingServicesList > * + * {
-  margin-left: 12px;
+  flex-wrap: wrap;
 }
 
 .streamingServicesListItem {
   text-transform: uppercase;
+  padding: 4px 12px 4px 0;
 }
 
 .seeMoreButton {
   color: #1d8cf2;
   text-decoration: underline;
+  padding: 4px 0;
 }

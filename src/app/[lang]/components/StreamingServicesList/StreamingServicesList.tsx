@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import cx from "classnames";
 import { streamingServicesList } from "@/utils";
 import styles from "./StreamingServicesList.module.css";
 
@@ -10,13 +9,9 @@ export function StreamingServicesList() {
     React.useState(false);
 
   return (
-    <ul
-      className={cx(styles.streamingServicesList, {
-        [styles.streamingServicesListExpanded]: streamingServicesListExpanded,
-      })}
-    >
+    <ul className={styles.streamingServicesList}>
       {streamingServicesList.map((service, index) => {
-        if (!streamingServicesListExpanded && index >= 3) return null;
+        if (!streamingServicesListExpanded && index >= 5) return null;
 
         return (
           <li key={service.name} className={styles.streamingServicesListItem}>

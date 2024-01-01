@@ -10,7 +10,11 @@
     "form": {
       "messageLabel": "message",
       "messagePlaceholder": "Say hi, tell us what you like or dislike, or just tell us a joke.",
-      "submitButton": "Submit"
+      "emailLabel": "email",
+      "emailPlaceholder": "youremail@gmail.com",
+      "emailErrorText": "Something's off with your email address, please check it again.",
+      "submitButton": "Submit",
+      "checkboxLabel": "I want to leave my email to get exclusive content (opt-out anytime)"
     }
   }
 }
