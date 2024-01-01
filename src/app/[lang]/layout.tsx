@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Analytics } from "@vercel/analytics/react";
 import cx from "classnames";
 import { Locale, i18n } from "@/i18n-config";
 import { futuraFont, antonFont } from "@/fonts";
@@ -69,6 +70,7 @@ export default async function RootLayout({ children, params }: PropsType) {
           <main className={styles.main}>{children}</main>
           <footer className={styles.footer}>ⓒ N.E.W. {currentYear}</footer>
         </div>
+        <Analytics />
       </body>
     </html>
   );
