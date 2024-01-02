@@ -1,15 +1,23 @@
+@import "variables";
+
 .mainLayout {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "header header"
     "column1 column2";
-  column-gap: 24px;
+  column-gap: 64px;
+
+  @media (max-width: $smBreakpoint) {
+    grid-template-columns: auto;
+    grid-template-areas: "header" "column2" "column1";
+    column-gap: 0;
+  }
 }
 
 .heading {
-  max-width: 750px;
   grid-area: header;
+  max-width: 750px;
 }
 
 .column1,

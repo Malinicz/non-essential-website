@@ -5,8 +5,8 @@ import cx from "classnames";
 import { Locale, i18n } from "@/i18n-config";
 import { futuraFont, antonFont } from "@/fonts";
 import { getDictionary } from "@/get-dictionary";
-import styles from "./layout.module.css";
-import "./globals.css";
+import styles from "./layout.module.scss";
+import "./globals.scss";
 import { LocaleSwitcher } from "./components";
 import { getNavigation, getNavigationList } from "@/utils";
 
@@ -50,7 +50,7 @@ export default async function RootLayout({ children, params }: PropsType) {
             <LocaleSwitcher />
           </header>
           <aside className={styles.aside}>
-            <div>
+            <div className={styles.bandName}>
               <Link href={navigation.home.url} className={styles.homeLink}>
                 NON-ESSENTIAL WORKERS
               </Link>

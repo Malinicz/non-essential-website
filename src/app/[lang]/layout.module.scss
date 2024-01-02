@@ -1,12 +1,21 @@
+@import "variables";
+
 .layout {
   display: grid;
-  grid-template-columns: 280px auto;
+  grid-template-columns: 240px auto;
   grid-template-rows: 80px auto 80px;
   column-gap: 24px;
   grid-template-areas: "header header" "aside main" "footer footer";
   width: 100%;
   max-width: 1280px;
   height: 100vh;
+
+  @media (max-width: $smBreakpoint) {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    column-gap: 0;
+    grid-template-areas: "aside" "main" "footer";
+  }
 }
 
 .header {
@@ -15,6 +24,10 @@
   justify-content: flex-end;
   align-items: center;
   padding: 24px;
+
+  @media (max-width: $smBreakpoint) {
+    display: none;
+  }
 }
 
 .aside {
@@ -22,10 +35,14 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-}
 
-.aside > * + * {
-  margin-top: 40px;
+  & > * + * {
+    margin-top: 40px;
+  }
+
+  @media (max-width: $smBreakpoint) {
+    align-items: center;
+  }
 }
 
 .main {
@@ -55,6 +72,14 @@
 
 .navigationListItem {
   text-transform: uppercase;
+}
+
+.bandName {
+  @media (max-width: $smBreakpoint) {
+    padding: 24px 16px;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .homeLink {

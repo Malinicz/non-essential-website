@@ -1,6 +1,6 @@
 import React from "react";
 import cx from "classnames";
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 import { BandCampPlugin } from "./components";
 import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
