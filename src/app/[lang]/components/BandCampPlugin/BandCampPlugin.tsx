@@ -1,4 +1,4 @@
-import styles from "./BandCampPlugin.module.css";
+import styles from "./BandCampPlugin.module.scss";
 
 const ALBUM_URL = {
   impossible:

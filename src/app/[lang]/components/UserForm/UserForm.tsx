@@ -4,7 +4,7 @@ import React from "react";
 import cx from "classnames";
 import { IoIosSend } from "react-icons/io";
 import { IoCheckboxOutline, IoSquareOutline } from "react-icons/io5";
-import styles from "./UserForm.module.css";
+import styles from "./UserForm.module.scss";
 import { useAutoSizeTextArea } from "./useAutoSizeTextArea";
 import { validateEmail } from "./validateEmail";
 

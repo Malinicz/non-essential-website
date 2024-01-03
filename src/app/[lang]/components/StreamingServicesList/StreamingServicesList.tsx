@@ -2,7 +2,7 @@
 
 import React from "react";
 import { streamingServicesList } from "@/utils";
-import styles from "./StreamingServicesList.module.css";
+import styles from "./StreamingServicesList.module.scss";
 
 export function StreamingServicesList() {
   const [streamingServicesListExpanded, setStreamingServicesListExpanded] =
