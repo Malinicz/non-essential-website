@@ -4,7 +4,7 @@ export const streamingServices = {
     url: "https://open.spotify.com/artist/2hMr9MtNJofNzJmGTrcxRX?si=uFktVCphQbqnny6zsusH5A",
   },
   appleMusic: {
-    name: "Apple",
+    name: "Apple Music",
     url: "https://music.apple.com/us/artist/non-essential-workers-n-e-w/1552562368",
   },
   youtubeMusic: {
@@ -26,6 +26,22 @@ export const streamingServices = {
   deezer: {
     name: "Deezer",
     url: "https://deezer.page.link/h4Jk8urN7n1Dfj818",
+  },
+  anghami: {
+    name: "Anghami",
+    url: "https://play.anghami.com/artist/8711767",
+  },
+  boomplay: {
+    name: "Boomplay",
+    url: "https://www.boomplay.com/artists/21852416",
+  },
+  flo: {
+    name: "Flo",
+    url: "https://www.music-flo.com/detail/artist/406580794",
+  },
+  qobuz: {
+    name: "Qobuz",
+    url: "https://www.qobuz.com/fi-en/interpreter/non-essential-workers-new/17806239",
   },
 };
 
