@@ -27,6 +27,11 @@ export function getNavigation(
       name: dictionary.navigation.contact,
       url: "contact",
     },
+    privacyPolicy: {
+      id: "privacyPolicy",
+      name: "privacy policy",
+      url: "privacy-policy",
+    },
   };
 }
 

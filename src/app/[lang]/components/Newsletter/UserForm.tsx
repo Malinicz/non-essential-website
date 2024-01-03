@@ -8,9 +8,10 @@ import {
   IoSquareOutline,
   IoSyncOutline,
 } from "react-icons/io5";
-import { validateEmail } from "@/utils";
+import { validateEmail, wrapTextWithComponent } from "@/utils";
 import styles from "./UserForm.module.scss";
 import { saveSubscriber } from "@/api/mailerLite";
+import Link from "next/link";
 
 export type PropsType = Readonly<{
   onSuccess: () => void;
@@ -23,9 +24,10 @@ export type PropsType = Readonly<{
     submitButton: string;
     checkboxLabel: string;
   };
+  privacyPolicyUrl: string;
 }>;
 
-export function UserForm({ copy, onSuccess }: PropsType) {
+export function UserForm({ copy, onSuccess, privacyPolicyUrl }: PropsType) {
   const [emailValue, setEmailValue] = React.useState("");
   const [emailErrorMessage, setEmailErrorMessage] = React.useState("");
   const [hasOptedIn, setHasOptedIn] = React.useState(false);
@@ -48,6 +50,10 @@ export function UserForm({ copy, onSuccess }: PropsType) {
 
   const handleOptInCheckboxClick = () => {
     setHasOptedIn(!hasOptedIn);
+  };
+
+  const handlePrivacyPolicyClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -78,7 +84,7 @@ export function UserForm({ copy, onSuccess }: PropsType) {
 
   return (
     <form className={styles.userForm} onSubmit={handleSubmit} noValidate>
-      <div className={cx(styles.userFormInputGroup, "fadeIn")}>
+      <div className={cx(styles.userFormInputGroup)}>
         <label htmlFor="email">{copy.emailLabel}</label>
         <input
           id="email"
@@ -113,7 +119,16 @@ export function UserForm({ copy, onSuccess }: PropsType) {
             <IoSquareOutline size={20} />
           )}
         </div>
-        <label>{copy.checkboxLabel}</label>
+        <label>
+          {wrapTextWithComponent(
+            ({ children }: React.PropsWithChildren) => (
+              <Link href={privacyPolicyUrl} onClick={handlePrivacyPolicyClick}>
+                {children}
+              </Link>
+            ),
+            copy.checkboxLabel
+          )}
+        </label>
       </div>
 
       <button

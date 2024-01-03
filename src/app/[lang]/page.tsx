@@ -5,6 +5,7 @@ import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
 import { StreamingServicesList } from "./components/StreamingServicesList";
 import { Newsletter } from "./components/Newsletter";
+import { getNavigation } from "@/utils";
 
 export default async function Page({
   params: { lang },
@@ -12,6 +13,7 @@ export default async function Page({
   params: { lang: Locale };
 }) {
   const dictionary = await getDictionary(lang);
+  const navigation = getNavigation(lang, dictionary);
 
   return (
     <div className={styles.mainLayout}>
@@ -25,7 +27,10 @@ export default async function Page({
           <StreamingServicesList />
         </section>
         <section>
-          <Newsletter copy={dictionary.home.newsletter} />
+          <Newsletter
+            copy={dictionary.home.newsletter}
+            privacyPolicyUrl={navigation.privacyPolicy.url}
+          />
         </section>
       </div>
       <div className={styles.column2}>

@@ -5,6 +5,7 @@ import { UserForm, PropsType as UserFormPropsType } from "./UserForm";
 import styles from "./Newsletter.module.scss";
 
 export type PropsType = Readonly<{
+  privacyPolicyUrl: string;
   copy: {
     title: string;
     description: string;
@@ -14,7 +15,7 @@ export type PropsType = Readonly<{
   };
 }>;
 
-export function Newsletter({ copy }: PropsType) {
+export function Newsletter({ copy, privacyPolicyUrl }: PropsType) {
   const [success, setSuccess] = React.useState(false);
 
   const handleSuccess = () => {
@@ -28,7 +29,11 @@ export function Newsletter({ copy }: PropsType) {
 
       {!success && (
         <div className={styles.form}>
-          <UserForm copy={copy.form} onSuccess={handleSuccess} />
+          <UserForm
+            copy={copy.form}
+            onSuccess={handleSuccess}
+            privacyPolicyUrl={privacyPolicyUrl}
+          />
         </div>
       )}
     </>
