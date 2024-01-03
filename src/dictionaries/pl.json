@@ -1,27 +1,31 @@
 {
   "websiteTitle": "Non-Essential Workers",
-  "websiteDescription": "Strona internetowa zespołu Non-Essential Workers",
+  "websiteDescription": "Non-Essential Workers band website",
   "home": {
-    "heading": "Nowy singiel Impossible z debiutanckiej EP-ki już dostępny!",
-    "subheading1": "Hej, posłuchaj...",
-    "subheading2": "...chcemy też usłyszeć coś od ciebie",
+    "heading": "N.E.W. Impossible single from debut EP 'First Shift' out now",
+    "streamingServicesTitle": "Hey, listen...",
     "streamingServicesDescription": "Available on all music platforms.",
-    "userFormDescription": "Our music simply wouldn't exist without you. Drop us a message below to say hi or share your thoughts about our music.",
-    "form": {
-      "messageLabel": "message",
-      "messagePlaceholder": "Say hi, tell us what you like or dislike, or just tell us a joke.",
-      "emailLabel": "email",
-      "emailPlaceholder": "youremail@gmail.com",
-      "emailErrorText": "Something's off with your email address, please check it again.",
-      "submitButton": "Submit",
-      "checkboxLabel": "I want to leave my email to get exclusive content (opt-out anytime)"
+    "newsletter": {
+      "title": "...we'd like to hear from you too",
+      "titleSuccess": "Thank you, it means the world to us!",
+      "description": "Our music simply wouldn't exist without you. Drop us a message below to say hi or share your thoughts about our music.",
+      "descriptionSuccess": "We'll get back to you soon with some N.E.W. exclusive content.",
+      "form": {
+        "emailLabel": "email",
+        "emailPlaceholder": "youremail@gmail.com",
+        "emailFormattingErrorText": "Something's off with your email address, please check it again.",
+        "emailAlreadySubscribedErrorText": "You're already subscribed to our newsletter. Thanks!",
+        "emailGenericErrorText": "Something went wrong, please try again later or drop us a message at nonessentialworkers@gmail.com",
+        "submitButton": "Submit",
+        "checkboxLabel": "I agree to receive newsletters and acknowledge that I have read and agree to the Privacy Policy."
+      }
     }
   },
   "navigation": {
-    "home": "strona główna",
+    "home": "home",
     "bio": "bio",
-    "music": "muzyka",
-    "videos": "wideo",
-    "contact": "kontakt"
+    "music": "music",
+    "videos": "videos",
+    "contact": "contact"
   }
 }
