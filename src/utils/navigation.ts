@@ -41,5 +41,7 @@ export function getNavigationList(
 ) {
   const navigation = getNavigation(locale, dictionary);
 
-  return Object.values(navigation).filter((n) => n.id !== "home");
+  return Object.values(navigation).filter(
+    (n) => !["home", "privacyPolicy"].includes(n.id)
+  );
 }
