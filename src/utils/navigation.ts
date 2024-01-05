@@ -1,4 +1,4 @@
-import { getDictionary } from "@/get-dictionary";
+import { DictionaryType } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
 
 export function getNavigation({ locale }: { locale: Locale }) {
@@ -22,10 +22,7 @@ export function getNavigation({ locale }: { locale: Locale }) {
   };
 }
 
-export function getMenuItems(
-  locale: Locale,
-  dictionary: Awaited<ReturnType<typeof getDictionary>>
-) {
+export function getMenuItems(locale: Locale, dictionary: DictionaryType) {
   const navigation = getNavigation({ locale });
 
   return {
@@ -52,10 +49,13 @@ export function getMenuItems(
   };
 }
 
-export function getMenuItemsList(
-  locale: Locale,
-  dictionary: Awaited<ReturnType<typeof getDictionary>>
-) {
+export function getMenuItemsList({
+  locale,
+  dictionary,
+}: {
+  locale: Locale;
+  dictionary: DictionaryType;
+}) {
   const navigation = getMenuItems(locale, dictionary);
 
   return Object.values(navigation);

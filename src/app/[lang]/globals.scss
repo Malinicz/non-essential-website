@@ -1,5 +1,3 @@
-@import "variables";
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -37,7 +35,7 @@ h1 {
   font-size: 3rem;
   padding-bottom: 40px;
 
-  @media (max-width: $smBreakpoint) {
+  @media (max-width: $sm-breakpoint) {
     font-size: 2rem;
   }
 }
@@ -46,7 +44,7 @@ h2 {
   font-size: 2rem;
   padding-bottom: 16px;
 
-  @media (max-width: $smBreakpoint) {
+  @media (max-width: $sm-breakpoint) {
     font-size: 1.5rem;
   }
 }
@@ -112,4 +110,14 @@ button {
   animation-name: fadeInAnimation;
   animation-duration: 0.4s;
   animation-timing-function: ease-out;
+}
+
+@each $name, $size in $spacings {
+  .gap-x-#{$name} > * + * {
+    margin-left: $size;
+  }
+
+  .gap-y-#{$name} > * + * {
+    margin-top: $size;
+  }
 }

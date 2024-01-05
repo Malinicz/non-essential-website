@@ -1,5 +1,3 @@
-@import "variables";
-
 .mainLayout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -8,7 +6,7 @@
     "column1 column2";
   column-gap: 64px;
 
-  @media (max-width: $smBreakpoint) {
+  @media (max-width: $sm-breakpoint) {
     grid-template-columns: auto;
     grid-template-areas: "header" "column2" "column1";
     column-gap: 0;
@@ -31,4 +29,8 @@
 
 .column2 {
   grid-area: column2;
+
+  @media (max-width: $sm-breakpoint) {
+    margin: 0 auto;
+  }
 }

@@ -1,0 +1,10 @@
+.navigationList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.navigationListItem {
+  text-transform: uppercase;
+  padding: $spacing-xxs;
+}

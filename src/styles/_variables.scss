@@ -1,0 +1,22 @@
+// breakpoints
+$sm-breakpoint: 600px;
+
+// colors
+
+// spacing
+$spacing-xxs: 4px;
+$spacing-xs: 8px;
+$spacing-s: 16px;
+$spacing-m: 24px;
+$spacing-l: 40px;
+$spacing-xl: 48px;
+$spacing-xxl: 64px;
+
+$spacings: (
+  "xxs": $spacing-xxs,
+  "xs": $spacing-xs,
+  "s": $spacing-s,
+  "m": $spacing-m,
+  "l": $spacing-l,
+  "xl": $spacing-xl,
+);

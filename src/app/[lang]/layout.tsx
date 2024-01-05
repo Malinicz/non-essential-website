@@ -8,7 +8,8 @@ import { getDictionary } from "@/get-dictionary";
 import styles from "./layout.module.scss";
 import "./globals.scss";
 import { LocaleSwitcher } from "./components";
-import { getNavigation, getMenuItemsList } from "@/utils";
+import { getNavigation } from "@/utils";
+import { Navigation } from "./components/Navigation";
 
 export async function generateMetadata({
   params,
@@ -37,7 +38,6 @@ export default async function RootLayout({ children, params }: PropsType) {
   const currentYear = new Date().getFullYear();
   const dictionary = await getDictionary(params.lang);
   const navigation = getNavigation({ locale: params.lang });
-  const navigationList = getMenuItemsList(params.lang, dictionary);
 
   return (
     <html
@@ -46,27 +46,19 @@ export default async function RootLayout({ children, params }: PropsType) {
     >
       <body>
         <div className={styles.layout}>
-          <header className={styles.header}>
+          <div className={styles.topSection}>
             <LocaleSwitcher />
-          </header>
-          <aside className={styles.aside}>
-            <div className={styles.bandName}>
+          </div>
+          <div className="gap-y-l">
+            <header className={styles.header}>
               <Link href={navigation.home.url} className={styles.homeLink}>
                 NON-ESSENTIAL WORKERS
               </Link>
-            </div>
-            <nav>
-              <ul className={styles.navigationList}>
-                {navigationList.map((item) => (
-                  <li key={item.id} className={styles.navigationListItem}>
-                    <Link key={item.id} href={item.url}>
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          </aside>
+            </header>
+            <aside className={styles.aside}>
+              <Navigation locale={params.lang} copy={dictionary} />
+            </aside>
+          </div>
           <main className={styles.main}>{children}</main>
           <footer className={styles.footer}>ⓒ N.E.W. {currentYear}</footer>
         </div>
