@@ -1,47 +1,62 @@
 import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
 
-export function getNavigation(
-  locale: Locale,
-  dictionary: Awaited<ReturnType<typeof getDictionary>>
-) {
+export function getNavigation({ locale }: { locale: Locale }) {
   return {
-    home: { id: "home", name: dictionary.navigation.home, url: `/${locale}` },
+    home: { url: `/${locale}` },
     bio: {
-      id: "bio",
-      name: dictionary.navigation.bio,
-      url: "bio",
+      url: `/${locale}/bio`,
     },
     music: {
-      id: "music",
-      name: dictionary.navigation.music,
-      url: "music",
+      url: `/${locale}/music`,
     },
     videos: {
-      id: "videos",
-      name: dictionary.navigation.videos,
-      url: "videos",
+      url: `/${locale}/videos`,
     },
     contact: {
-      id: "contact",
-      name: dictionary.navigation.contact,
-      url: "contact",
+      url: `/${locale}/contact`,
     },
     privacyPolicy: {
-      id: "privacyPolicy",
-      name: "privacy policy",
-      url: "privacy-policy",
+      url: `/${locale}/privacy-policy`,
     },
   };
 }
 
-export function getNavigationList(
+export function getMenuItems(
   locale: Locale,
   dictionary: Awaited<ReturnType<typeof getDictionary>>
 ) {
-  const navigation = getNavigation(locale, dictionary);
+  const navigation = getNavigation({ locale });
 
-  return Object.values(navigation).filter(
-    (n) => !["home", "privacyPolicy"].includes(n.id)
-  );
+  return {
+    bio: {
+      id: "bio",
+      name: dictionary.navigation.bio,
+      url: navigation.bio.url,
+    },
+    music: {
+      id: "music",
+      name: dictionary.navigation.music,
+      url: navigation.music.url,
+    },
+    videos: {
+      id: "videos",
+      name: dictionary.navigation.videos,
+      url: navigation.videos.url,
+    },
+    contact: {
+      id: "contact",
+      name: dictionary.navigation.contact,
+      url: navigation.contact.url,
+    },
+  };
+}
+
+export function getMenuItemsList(
+  locale: Locale,
+  dictionary: Awaited<ReturnType<typeof getDictionary>>
+) {
+  const navigation = getMenuItems(locale, dictionary);
+
+  return Object.values(navigation);
 }

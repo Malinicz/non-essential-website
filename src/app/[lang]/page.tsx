@@ -13,7 +13,7 @@ export default async function Page({
   params: { lang: Locale };
 }) {
   const dictionary = await getDictionary(lang);
-  const navigation = getNavigation(lang, dictionary);
+  const navigation = getNavigation({ locale: lang });
 
   return (
     <div className={styles.mainLayout}>

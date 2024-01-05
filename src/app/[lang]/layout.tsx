@@ -8,7 +8,7 @@ import { getDictionary } from "@/get-dictionary";
 import styles from "./layout.module.scss";
 import "./globals.scss";
 import { LocaleSwitcher } from "./components";
-import { getNavigation, getNavigationList } from "@/utils";
+import { getNavigation, getMenuItemsList } from "@/utils";
 
 export async function generateMetadata({
   params,
@@ -36,8 +36,8 @@ type PropsType = Readonly<{
 export default async function RootLayout({ children, params }: PropsType) {
   const currentYear = new Date().getFullYear();
   const dictionary = await getDictionary(params.lang);
-  const navigation = getNavigation(params.lang, dictionary);
-  const navigationList = getNavigationList(params.lang, dictionary);
+  const navigation = getNavigation({ locale: params.lang });
+  const navigationList = getMenuItemsList(params.lang, dictionary);
 
   return (
     <html
