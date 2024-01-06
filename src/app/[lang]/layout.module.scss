@@ -14,9 +14,9 @@
 
   @media (max-width: $sm-breakpoint) {
     grid-template-columns: auto;
-    grid-template-rows: auto;
+    grid-template-rows: 80px auto 40px;
     column-gap: 0;
-    grid-template-areas: "header" "main";
+    grid-template-areas: "header" "main" "footer";
   }
 }
 
@@ -39,7 +39,8 @@
 
   @media (max-width: $sm-breakpoint) {
     justify-content: center;
-    padding: $spacing-m;
+    align-items: center;
+    height: 100%;
   }
 }
 
@@ -74,10 +75,14 @@
   display: flex;
   justify-content: flex-end;
   padding: 24px;
+  background: #fff;
   align-items: center;
+  width: 100%;
 
   @media (max-width: $sm-breakpoint) {
-    display: none;
+    position: absolute;
+    bottom: 0;
+    padding: 0;
   }
 }
 
@@ -92,4 +97,18 @@
 .homeLink {
   text-decoration: none;
   color: #000;
+}
+
+.footerCopyright {
+  @media (max-width: $sm-breakpoint) {
+    display: none;
+  }
+}
+
+.footerNavigation {
+  width: 100%;
+
+  @media (min-width: $sm-breakpoint) {
+    display: none;
+  }
 }

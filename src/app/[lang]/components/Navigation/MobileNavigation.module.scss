@@ -1,0 +1,69 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  padding: 0 $spacing-m;
+  z-index: 1;
+  border-top: 1px solid #ebedee;
+}
+
+.menuButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuButton {
+  text-decoration: underline;
+  color: #1d8cf2;
+}
+
+@keyframes slideIn {
+  0% {
+    top: 100%;
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    top: -100%;
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    top: 0%;
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+.menu {
+  top: -100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #fff;
+  padding: 0 $spacing-m;
+  border-top: 1px solid #ebedee;
+  border-bottom: 1px solid #ebedee;
+  animation: slideIn 0.3s ease-out;
+}

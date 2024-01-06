@@ -9,7 +9,7 @@ import styles from "./layout.module.scss";
 import "./globals.scss";
 import { LocaleSwitcher } from "./components";
 import { getNavigation } from "@/utils";
-import { Navigation } from "./components/Navigation";
+import { MobileNavigation, Navigation } from "./components/Navigation";
 
 export async function generateMetadata({
   params,
@@ -60,7 +60,12 @@ export default async function RootLayout({ children, params }: PropsType) {
             </aside>
           </div>
           <main className={styles.main}>{children}</main>
-          <footer className={styles.footer}>ⓒ N.E.W. {currentYear}</footer>
+          <footer className={styles.footer}>
+            <div className={styles.footerCopyright}>ⓒ N.E.W. {currentYear}</div>
+            <div className={styles.footerNavigation}>
+              <MobileNavigation locale={params.lang} copy={dictionary} />
+            </div>
+          </footer>
         </div>
         <Analytics />
       </body>
