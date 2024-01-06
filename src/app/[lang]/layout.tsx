@@ -10,6 +10,7 @@ import "./globals.scss";
 import { LocaleSwitcher } from "./components";
 import { getNavigation } from "@/utils";
 import { MobileNavigation, Navigation } from "./components/Navigation";
+import { CookieConsentBanner } from "./components/CookieConsentBanner";
 
 export async function generateMetadata({
   params,
@@ -67,6 +68,10 @@ export default async function RootLayout({ children, params }: PropsType) {
             </div>
           </footer>
         </div>
+        <CookieConsentBanner
+          copy={dictionary}
+          privacyPolicyUrl={navigation.privacyPolicy.url}
+        />
         <Analytics />
       </body>
     </html>
