@@ -32,5 +32,6 @@
 
   @media (max-width: $sm-breakpoint) {
     margin: 0 auto;
+    padding-bottom: $spacing-l;
   }
 }
