@@ -62,10 +62,12 @@ export default async function RootLayout({ children, params }: PropsType) {
           </div>
           <main className={styles.main}>{children}</main>
           <footer className={styles.footer}>
-            <CookieConsentBanner
-              copy={dictionary}
-              privacyPolicyUrl={navigation.privacyPolicy.url}
-            />
+            <div className={styles.cookieConsentContainer}>
+              <CookieConsentBanner
+                copy={dictionary}
+                privacyPolicyUrl={navigation.privacyPolicy.url}
+              />
+            </div>
             <div className={styles.footerCopyright}>ⓒ N.E.W. {currentYear}</div>
             <div className={styles.footerNavigation}>
               <MobileNavigation locale={params.lang} copy={dictionary} />

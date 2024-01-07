@@ -41,7 +41,7 @@ export function CookieConsentBanner({ copy, privacyPolicyUrl }: PropsType) {
           copy.cookieConsentText
         )}
       </div>
-      <button onClick={handleClose}>
+      <button onClick={handleClose} className={styles.closeButton}>
         <IoCloseCircleOutline size={25} />
       </button>
     </div>

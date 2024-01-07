@@ -9,7 +9,7 @@
     "aside main"
     "footer footer";
   width: 100%;
-  max-width: 1280px;
+  max-width: $lg-breakpoint;
   min-height: 100vh;
 
   @media (max-width: $sm-breakpoint) {
@@ -74,7 +74,6 @@
   grid-area: footer;
   position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: flex-end;
   padding: 24px;
   background: $white;
@@ -83,6 +82,8 @@
 
   @media (max-width: $sm-breakpoint) {
     position: fixed;
+    flex-direction: column;
+    align-items: flex-end;
     bottom: 0;
     padding: 0;
   }
@@ -112,5 +113,16 @@
 
   @media (min-width: $sm-breakpoint) {
     display: none;
+  }
+}
+
+.cookieConsentContainer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  @media (max-width: $sm-breakpoint) {
+    bottom: 40px;
   }
 }
