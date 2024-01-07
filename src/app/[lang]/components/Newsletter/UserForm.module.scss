@@ -10,7 +10,7 @@
 .userFormInput {
   background: transparent;
   border: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid $black;
   min-height: 40px;
   resize: none;
   overflow: hidden;
@@ -18,11 +18,11 @@
 }
 
 .userFormInputError {
-  border-bottom: 1px solid #ff0000b8;
+  border-bottom: 1px solid $red;
 }
 
 .userFormInputErrorText {
-  color: #ff0000b8;
+  color: $red;
   font-size: 12px;
   margin-top: 4px;
 }
@@ -41,8 +41,8 @@
 .submitButton {
   display: flex;
   align-items: center;
-  background: #000;
-  color: #fff;
+  background: $black;
+  color: $white;
   border: none;
   padding: 0 24px;
   min-height: 40px;
@@ -56,7 +56,7 @@
 }
 
 .submitButton:disabled {
-  background: #a0a0a0;
+  background: $gray;
   pointer-events: none;
 }
 

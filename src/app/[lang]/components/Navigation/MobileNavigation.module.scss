@@ -6,7 +6,7 @@
   height: 40px;
   padding: 0 $spacing-m;
   z-index: 1;
-  border-top: 1px solid #ebedee;
+  border-top: 1px solid $cream;
 }
 
 .menuButtonContainer {
@@ -17,7 +17,7 @@
 
 .menuButton {
   text-decoration: underline;
-  color: #1d8cf2;
+  color: $blue;
 }
 
 @keyframes slideIn {
@@ -61,9 +61,9 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background: #fff;
+  background: $white;
   padding: 0 $spacing-m;
-  border-top: 1px solid #ebedee;
-  border-bottom: 1px solid #ebedee;
+  border-top: 1px solid $cream;
+  border-bottom: 1px solid $cream;
   animation: slideIn 0.3s ease-out;
 }
