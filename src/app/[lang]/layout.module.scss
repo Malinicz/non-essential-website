@@ -11,6 +11,8 @@
   width: 100%;
   max-width: 1280px;
   height: 100vh;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 
   @media (max-width: $sm-breakpoint) {
     grid-template-columns: auto;
@@ -72,7 +74,9 @@
 
 .footer {
   grid-area: footer;
+  position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
   padding: 24px;
   background: #fff;
@@ -80,7 +84,7 @@
   width: 100%;
 
   @media (max-width: $sm-breakpoint) {
-    position: absolute;
+    position: sticky;
     bottom: 0;
     padding: 0;
   }
