@@ -84,7 +84,7 @@
   width: 100%;
 
   @media (max-width: $sm-breakpoint) {
-    position: sticky;
+    position: fixed;
     bottom: 0;
     padding: 0;
   }
