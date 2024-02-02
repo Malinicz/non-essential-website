@@ -4,6 +4,8 @@ import React from "react";
 import { streamingServicesList } from "@/utils";
 import styles from "./StreamingServicesList.module.scss";
 
+const ITEMS_LIMIT = 7;
+
 export function StreamingServicesList() {
   const [streamingServicesListExpanded, setStreamingServicesListExpanded] =
     React.useState(false);
@@ -11,7 +13,7 @@ export function StreamingServicesList() {
   return (
     <ul className={styles.streamingServicesList}>
       {streamingServicesList.map((service, index) => {
-        if (!streamingServicesListExpanded && index >= 5) return null;
+        if (!streamingServicesListExpanded && index >= ITEMS_LIMIT) return null;
 
         return (
           <li key={service.name} className={styles.streamingServicesListItem}>

@@ -1,0 +1,20 @@
+.socialMediaLink {
+  &:hover {
+    background: none;
+  }
+}
+
+.socialMediaButton {
+  width: 35px;
+  height: 35px;
+
+  &:hover {
+    transform: rotateY(360deg);
+    transition: 0.8s ease transform;
+  }
+}
+
+.socialMediaIcon {
+  width: 35px;
+  height: 35px;
+}

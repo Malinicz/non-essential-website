@@ -1,6 +1,7 @@
 .streamingServicesList {
   display: flex;
   flex-wrap: wrap;
+  max-width: 600px;
 }
 
 .streamingServicesListItem {
@@ -9,7 +10,16 @@
 }
 
 .seeMoreButton {
-  color: $blue;
+  color: $black;
   text-decoration: underline;
-  padding: 4px 0;
+  padding: 0;
+  margin-top: 4px;
+
+  &:hover {
+    background: $graphite;
+    color: $cream;
+    text-decoration: none;
+    transition: all 0.05s ease-in;
+    border-radius: 2px;
+  }
 }

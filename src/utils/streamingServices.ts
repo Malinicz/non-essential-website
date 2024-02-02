@@ -23,6 +23,10 @@ export const streamingServices = {
     name: "Amazon",
     url: "https://music.amazon.com/artists/B08W3LX2Q2?ref=dm_sh_Q5UnVbvni8RQHwMk6UNcdC8Qv",
   },
+  soundCloud: {
+    name: "SoundCloud",
+    url: "https://soundcloud.com/non-essential-workers",
+  },
   deezer: {
     name: "Deezer",
     url: "https://deezer.page.link/h4Jk8urN7n1Dfj818",

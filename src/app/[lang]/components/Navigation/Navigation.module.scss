@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: flex-end;
 
-  @media (max-width: $sm-breakpoint) {
+  @media (max-width: $md-breakpoint) {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -13,7 +13,7 @@
   text-transform: uppercase;
   padding: $spacing-xxs;
 
-  @media (max-width: $sm-breakpoint) {
+  @media (max-width: $md-breakpoint) {
     padding: 0;
     margin-right: 12px;
   }

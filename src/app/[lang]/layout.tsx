@@ -11,6 +11,7 @@ import { LocaleSwitcher } from "./components";
 import { getNavigation } from "@/utils";
 import { MobileNavigation, Navigation } from "./components/Navigation";
 import { CookieConsentBanner } from "./components/CookieConsentBanner";
+import { SocialMediaButtons } from "./components/SocialMediaButtons";
 
 export async function generateMetadata({
   params,
@@ -46,21 +47,30 @@ export default async function RootLayout({ children, params }: PropsType) {
       className={cx(futuraFont.variable, antonFont.variable)}
     >
       <body>
+        <div className={styles.bodyBackground} />
         <div className={styles.layout}>
           <div className={styles.topSection}>
             <LocaleSwitcher />
           </div>
-          <div className="gap-y-l">
-            <header className={styles.header}>
-              <Link href={navigation.home.url} className={styles.homeLink}>
-                NON-ESSENTIAL WORKERS
-              </Link>
-            </header>
-            <aside className={styles.aside}>
-              <Navigation locale={params.lang} copy={dictionary} />
-            </aside>
+          <div className={cx(styles.navigationSection, "gap-y-l")}>
+            <div className={cx(styles.linksSection, "gap-y-l")}>
+              <header className={styles.header}>
+                <Link href={navigation.home.url} className={styles.homeLink}>
+                  NON-ESSENTIAL WORKERS
+                </Link>
+              </header>
+              <aside className={styles.aside}>
+                <Navigation locale={params.lang} copy={dictionary} />
+              </aside>
+            </div>
+            <div className={styles.socialMediaSection}>
+              <SocialMediaButtons />
+            </div>
           </div>
-          <main className={styles.main}>{children}</main>
+          <main className={styles.main}>
+            <div className={styles.mainBackground} />
+            {children}
+          </main>
           <footer className={styles.footer}>
             <div className={styles.cookieConsentContainer}>
               <CookieConsentBanner

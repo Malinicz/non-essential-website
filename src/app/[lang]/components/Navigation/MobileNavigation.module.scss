@@ -7,6 +7,7 @@
   padding: 0 $spacing-m;
   z-index: 1;
   border-top: 1px solid $cream;
+  background: $white;
 }
 
 .menuButtonContainer {
@@ -17,7 +18,15 @@
 
 .menuButton {
   text-decoration: underline;
-  color: $blue;
+  color: $black;
+
+  &:hover {
+    background: $graphite;
+    color: $cream;
+    text-decoration: none;
+    transition: all 0.05s ease-in;
+    border-radius: 2px;
+  }
 }
 
 @keyframes slideIn {

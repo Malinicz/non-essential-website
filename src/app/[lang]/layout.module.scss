@@ -12,7 +12,7 @@
   max-width: $lg-breakpoint;
   min-height: 100vh;
 
-  @media (max-width: $sm-breakpoint) {
+  @media (max-width: $md-breakpoint) {
     grid-template-columns: auto;
     grid-template-rows: 80px auto 40px;
     column-gap: 0;
@@ -27,9 +27,32 @@
   align-items: center;
   padding: 24px;
 
-  @media (max-width: $sm-breakpoint) {
+  @media (max-width: $md-breakpoint) {
     display: none;
   }
+}
+
+.navigationSection {
+  position: sticky;
+  top: $spacing-s;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  z-index: 1;
+
+  @media (max-width: $md-breakpoint) {
+    position: relative;
+    top: unset;
+    background: $white;
+    height: 80px;
+  }
+}
+
+.linksSection {
+  width: 100%;
+  height: 100%;
 }
 
 .header {
@@ -37,10 +60,11 @@
   display: flex;
   justify-content: flex-end;
 
-  @media (max-width: $sm-breakpoint) {
+  @media (max-width: $md-breakpoint) {
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
   }
 }
 
@@ -54,20 +78,48 @@
     margin-top: 40px;
   }
 
-  @media (max-width: $sm-breakpoint) {
+  @media (max-width: $md-breakpoint) {
     display: none;
   }
 }
 
 .main {
+  position: relative;
   grid-area: main;
-  background: linear-gradient(125deg, $cream 0%, $white 100%);
   padding: 40px 24px 40px 40px;
   width: 100%;
 
-  @media (max-width: $sm-breakpoint) {
+  @media (max-width: $md-breakpoint) {
     padding: $spacing-s;
   }
+}
+
+.mainBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $white;
+  opacity: 0.7;
+  z-index: -1;
+  border: 0px solid $black;
+  border-radius: 8px;
+}
+
+.bodyBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 100vh;
+  opacity: 0.3;
+  z-index: -1;
+  background-image: url("./assets/tree.png");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .footer {
@@ -76,11 +128,10 @@
   display: flex;
   justify-content: flex-end;
   padding: 24px;
-  background: $white;
   align-items: center;
   width: 100%;
 
-  @media (max-width: $sm-breakpoint) {
+  @media (max-width: $md-breakpoint) {
     position: fixed;
     flex-direction: column;
     align-items: flex-end;
@@ -90,7 +141,7 @@
 }
 
 .bandName {
-  @media (max-width: $sm-breakpoint) {
+  @media (max-width: $md-breakpoint) {
     padding: 24px 16px;
     width: 100%;
     text-align: center;
@@ -100,10 +151,11 @@
 .homeLink {
   text-decoration: none;
   color: $black;
+  font-size: 1.15rem;
 }
 
 .footerCopyright {
-  @media (max-width: $sm-breakpoint) {
+  @media (max-width: $md-breakpoint) {
     display: none;
   }
 }
@@ -111,7 +163,7 @@
 .footerNavigation {
   width: 100%;
 
-  @media (min-width: $sm-breakpoint) {
+  @media (min-width: $md-breakpoint) {
     display: none;
   }
 }
@@ -122,7 +174,13 @@
   left: 0;
   right: 0;
 
-  @media (max-width: $sm-breakpoint) {
+  @media (max-width: $md-breakpoint) {
     bottom: 40px;
+  }
+}
+
+.socialMediaSection {
+  @media (max-width: $md-breakpoint) {
+    display: none;
   }
 }
