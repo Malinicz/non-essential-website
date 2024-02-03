@@ -10,9 +10,9 @@
   max-width: 150px;
   margin-right: $spacing-xs;
 
-  @media (max-width: $md-breakpoint) {
-    display: none;
-  }
+  // @media (max-width: $md-breakpoint) {
+  //   display: none;
+  // }
 }
 
 .controls {

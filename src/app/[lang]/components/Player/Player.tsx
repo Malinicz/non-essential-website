@@ -8,7 +8,6 @@ import {
   IoPlaySkipBack,
   IoPlay,
   IoPause,
-  IoSyncOutline,
 } from "react-icons/io5";
 import impossibleSrc from "./assets/impossible_compressed.mp3";
 import fireSrc from "./assets/fire_compressed.mp3";
@@ -35,8 +34,6 @@ function Player() {
     } else {
       setActiveSongIndex(activeSongIndex + 1);
     }
-
-    setLoading(true);
   }, [activeSongIndex]);
 
   const handlePrevious = React.useCallback(() => {
@@ -45,8 +42,6 @@ function Player() {
     } else {
       setActiveSongIndex(activeSongIndex - 1);
     }
-
-    setLoading(true);
   }, [activeSongIndex]);
 
   const togglePlayPause = React.useCallback(() => {
@@ -58,15 +53,18 @@ function Player() {
       audio.pause();
     } else {
       audio.play();
+
+      if (audio.readyState < 3) {
+        setLoading(true);
+      }
     }
 
     setPlaying(!playing);
   }, [playing]);
 
   const handleCanPlayThrough = React.useCallback(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 300);
+    console.log("can play through");
+    setLoading(false);
   }, []);
 
   React.useEffect(() => {
@@ -80,40 +78,30 @@ function Player() {
       <audio
         src={activeAudio.src}
         ref={audioRef}
-        preload="auto"
-        onCanPlayThrough={handleCanPlayThrough}
+        // preload="auto"
         onEnded={handleNext}
+        onCanPlayThrough={handleCanPlayThrough}
       />
-      <div className={styles.songName}>{activeAudio.name}</div>
+      <div className={styles.songName}>
+        {loading ? "buffering..." : activeAudio.name}
+      </div>
       <div className={styles.controls}>
         <div className={styles.controlButton}>
-          <button
-            className={styles.skipBackButton}
-            onClick={handlePrevious}
-            disabled={loading}
-          >
+          <button className={styles.skipBackButton} onClick={handlePrevious}>
             <IoPlaySkipBack />
           </button>
         </div>
         <div className={styles.controlButton}>
-          {loading ? (
-            <IoSyncOutline size={25} className={styles.spinning} />
-          ) : (
-            <button className={styles.playButton} onClick={togglePlayPause}>
-              {playing ? (
-                <IoPause size={25} />
-              ) : (
-                <IoPlay size={25} className={styles.playIcon} />
-              )}
-            </button>
-          )}
+          <button className={styles.playButton} onClick={togglePlayPause}>
+            {playing ? (
+              <IoPause size={25} />
+            ) : (
+              <IoPlay size={25} className={styles.playIcon} />
+            )}
+          </button>
         </div>
         <div className={styles.controlButton}>
-          <button
-            className={styles.skipForwardButton}
-            onClick={handleNext}
-            disabled={loading}
-          >
+          <button className={styles.skipForwardButton} onClick={handleNext}>
             <IoPlaySkipForward />
           </button>
         </div>
