@@ -19,7 +19,7 @@ export function LocaleSwitcher() {
   return (
     <ul className={styles.list}>
       {i18n.locales.map((locale) => {
-        const isActive = pathname.startsWith(`/${locale}/`);
+        const isActive = pathname.startsWith(`/${locale}`);
 
         return (
           <li key={locale} className={styles.listItem}>

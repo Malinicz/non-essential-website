@@ -1,0 +1,14 @@
+.userFormInputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.userFormInput {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid $black;
+  min-height: 40px;
+  resize: none;
+  overflow: hidden;
+  border-radius: 0;
+}

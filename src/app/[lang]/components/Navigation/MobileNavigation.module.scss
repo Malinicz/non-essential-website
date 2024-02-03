@@ -121,6 +121,8 @@
 }
 
 .menu {
+  display: flex;
+  flex-direction: column;
   bottom: $mobile-footer-height;
   height: calc(100vh - $mobile-header-height);
   opacity: 0.96;

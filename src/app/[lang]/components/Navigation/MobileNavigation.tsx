@@ -8,7 +8,7 @@ import { Locale } from "@/i18n-config";
 import { DictionaryType, getDictionary } from "@/get-dictionary";
 import styles from "./MobileNavigation.module.scss";
 import { Navigation } from ".";
-import { LocaleSwitcher } from "..";
+import { LazyPlayer, LocaleSwitcher } from "..";
 
 type PropsType = Readonly<{
   locale: Locale;
@@ -30,6 +30,7 @@ export function MobileNavigation({ locale, copy }: PropsType) {
   return (
     <div className={styles.container}>
       <LocaleSwitcher />
+      <LazyPlayer />
       <div className={cx(styles.menuButtonContainer, "gap-x-xxs")}>
         {isMenuOpen ? <IoRemove /> : <IoAdd />}
         <button onClick={toggleMenu} className={styles.menuButton}>
@@ -38,7 +39,7 @@ export function MobileNavigation({ locale, copy }: PropsType) {
       </div>
 
       {isMenuOpen && (
-        <div className={styles.menu}>
+        <div className={cx(styles.menu, "gap-y-m")}>
           <Navigation locale={locale} copy={copy} />
         </div>
       )}

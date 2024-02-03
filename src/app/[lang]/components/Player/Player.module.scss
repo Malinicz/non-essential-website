@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.songName {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+  margin-right: $spacing-xs;
+
+  @media (max-width: $md-breakpoint) {
+    display: none;
+  }
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.controlButton {
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+
+.skipBackButton,
+.skipForwardButton,
+.playButton {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinning {
+  animation: spin 2s linear infinite;
+}
+
+.playIcon {
+  transform: translateX(2px);
+}

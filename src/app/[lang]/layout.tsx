@@ -1,3 +1,4 @@
+import React, { Suspense } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Analytics } from "@vercel/analytics/react";
@@ -7,7 +8,7 @@ import { futuraFont, antonFont } from "@/fonts";
 import { getDictionary } from "@/get-dictionary";
 import styles from "./layout.module.scss";
 import "./globals.scss";
-import { LocaleSwitcher } from "./components";
+import { LocaleSwitcher, LazyPlayer } from "./components";
 import { getNavigation } from "@/utils";
 import { MobileNavigation, Navigation } from "./components/Navigation";
 import { CookieConsentBanner } from "./components/CookieConsentBanner";
@@ -49,7 +50,8 @@ export default async function RootLayout({ children, params }: PropsType) {
       <body>
         <div className={styles.bodyBackground} />
         <div className={styles.layout}>
-          <div className={styles.topSection}>
+          <div className={cx(styles.topSection, "gap-x-l")}>
+            <LazyPlayer />
             <LocaleSwitcher />
           </div>
           <div className={cx(styles.navigationSection, "gap-y-l")}>
