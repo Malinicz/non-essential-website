@@ -24,7 +24,7 @@ function Player() {
   const audioRef = React.useRef<HTMLAudioElement>(null);
 
   const [playing, setPlaying] = React.useState(false);
-  const [loading, setLoading] = React.useState(true);
+  const [loading, setLoading] = React.useState(false);
   const [activeSongIndex, setActiveSongIndex] = React.useState(0);
 
   const activeAudio = SONGS[activeSongIndex];
@@ -63,17 +63,17 @@ function Player() {
     setPlaying(!playing);
   }, [playing]);
 
-  React.useEffect(() => {
-    if (playing) {
-      audioRef.current?.play();
-    }
-  }, [activeSongIndex, playing]);
-
   const handleCanPlayThrough = React.useCallback(() => {
     setTimeout(() => {
       setLoading(false);
     }, 300);
   }, []);
+
+  React.useEffect(() => {
+    if (playing) {
+      audioRef.current?.play();
+    }
+  }, [activeSongIndex, playing]);
 
   return (
     <div className={styles.container}>
