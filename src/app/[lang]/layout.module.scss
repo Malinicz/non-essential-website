@@ -14,7 +14,7 @@
 
   @media (max-width: $md-breakpoint) {
     grid-template-columns: auto;
-    grid-template-rows: 80px auto 40px;
+    grid-template-rows: 40px auto 40px;
     column-gap: 0;
     grid-template-areas: "header" "main" "footer";
   }
@@ -43,10 +43,12 @@
   z-index: 1;
 
   @media (max-width: $md-breakpoint) {
-    position: relative;
-    top: unset;
+    position: fixed;
+    top: 0;
     background: $white;
-    height: 80px;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid $cream;
   }
 }
 
@@ -105,6 +107,12 @@
   z-index: -1;
   border: 0px solid $black;
   border-radius: 8px;
+
+  @media (max-width: $md-breakpoint) {
+    top: -40px;
+    bottom: -40px;
+    border-radius: 0;
+  }
 }
 
 .bodyBackground {
