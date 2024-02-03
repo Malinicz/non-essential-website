@@ -78,7 +78,7 @@ function Player() {
       <audio
         src={activeAudio.src}
         ref={audioRef}
-        // preload="auto"
+        preload="auto"
         onEnded={handleNext}
         onCanPlayThrough={handleCanPlayThrough}
       />

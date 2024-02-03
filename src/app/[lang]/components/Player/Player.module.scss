@@ -1,6 +1,11 @@
 .container {
   display: flex;
   align-items: center;
+
+  @media (max-width: $md-breakpoint) {
+    flex-direction: row-reverse;
+    margin-left: -$spacing-xs;
+  }
 }
 
 .songName {
@@ -10,9 +15,10 @@
   max-width: 150px;
   margin-right: $spacing-xs;
 
-  // @media (max-width: $md-breakpoint) {
-  //   display: none;
-  // }
+  @media (max-width: $md-breakpoint) {
+    margin-right: 0;
+    margin-left: $spacing-xs;
+  }
 }
 
 .controls {
@@ -51,4 +57,10 @@
 
 .playIcon {
   transform: translateX(2px);
+}
+
+.playerFallback {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
