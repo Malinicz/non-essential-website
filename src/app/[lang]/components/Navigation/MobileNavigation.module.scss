@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 40px;
+  height: $mobile-footer-height;
   padding: 0 $spacing-m;
   z-index: 1;
   border-top: 1px solid $cream;
@@ -31,48 +31,106 @@
 
 @keyframes slideIn {
   0% {
-    top: 100%;
-    opacity: 0;
-  }
-
-  80% {
-    opacity: 0;
-  }
-
-  100% {
-    top: -100%;
     opacity: 1;
+    background: linear-gradient(to top, $white 0%, transparent);
   }
-}
 
-@keyframes slideOut {
-  0% {
-    top: 0%;
-    opacity: 1;
+  5% {
+    background: linear-gradient(to top, $white 5%, transparent);
+  }
+
+  10% {
+    background: linear-gradient(to top, $white 10%, transparent);
+  }
+
+  15% {
+    background: linear-gradient(to top, $white 15%, transparent);
+  }
+
+  20% {
+    background: linear-gradient(to top, $white 20%, transparent);
+  }
+
+  25% {
+    opacity: 0.99;
+    background: linear-gradient(to top, $white 25%, transparent);
+  }
+
+  30% {
+    background: linear-gradient(to top, $white 30%, transparent);
+  }
+
+  35% {
+    background: linear-gradient(to top, $white 35%, transparent);
+  }
+
+  40% {
+    background: linear-gradient(to top, $white 40%, transparent);
+  }
+
+  45% {
+    background: linear-gradient(to top, $white 45%, transparent);
   }
 
   50% {
-    opacity: 0;
+    opacity: 0.98;
+    background: linear-gradient(to top, $white 50%, transparent);
+  }
+
+  55% {
+    background: linear-gradient(to top, $white 55%, transparent);
+  }
+
+  60% {
+    background: linear-gradient(to top, $white 60%, transparent);
+  }
+
+  65% {
+    background: linear-gradient(to top, $white 65%, transparent);
+  }
+
+  70% {
+    background: linear-gradient(to top, $white 70%, transparent);
+  }
+
+  75% {
+    opacity: 0.97;
+    background: linear-gradient(to top, $white 75%, transparent);
+  }
+
+  80% {
+    background: linear-gradient(to top, $white 80%, transparent);
+  }
+
+  85% {
+    background: linear-gradient(to top, $white 85%, transparent);
+  }
+
+  90% {
+    background: linear-gradient(to top, $white 90%, transparent);
+  }
+
+  95% {
+    background: linear-gradient(to top, $white 95%, transparent);
   }
 
   100% {
-    top: 100%;
-    opacity: 0;
+    opacity: 0.96;
+    background: linear-gradient(to top, $white 100%, transparent);
   }
 }
 
 .menu {
-  top: -100%;
+  bottom: $mobile-footer-height;
+  height: calc(100vh - $mobile-header-height);
+  opacity: 0.96;
+  background: $white;
   position: absolute;
   left: 0;
   right: 0;
-  height: 40px;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background: $white;
+  justify-content: flex-end;
+  align-items: flex-end;
   padding: 0 $spacing-m;
-  border-top: 1px solid $cream;
-  border-bottom: 1px solid $cream;
-  animation: slideIn 0.3s ease-out;
+  animation: slideIn 0.2s linear;
 }

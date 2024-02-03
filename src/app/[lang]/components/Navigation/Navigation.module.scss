@@ -4,17 +4,26 @@
   align-items: flex-end;
 
   @media (max-width: $md-breakpoint) {
-    flex-direction: row;
-    justify-content: space-between;
+    margin-bottom: $spacing-m;
   }
 }
 
 .navigationListItem {
+  display: flex;
+  align-items: center;
   text-transform: uppercase;
   padding: $spacing-xxs;
 
   @media (max-width: $md-breakpoint) {
-    padding: 0;
-    margin-right: 12px;
+    padding: $spacing-xs 0;
   }
+}
+
+.linkActive {
+  pointer-events: none;
+  text-decoration: none;
+}
+
+.activeLinkIcon {
+  margin-right: $spacing-xxs;
 }
