@@ -39,11 +39,12 @@ export function MobileNavigation({ locale, copy }: PropsType) {
 
       {isMenuOpen && (
         <div className={cx(styles.menu, "gap-y-m")}>
-          <div className={cx(styles.menuLeftSide, "gap-y-m")}>
+          <SocialMediaButtons />
+          <div className={cx(styles.menuRightSide, "gap-y-m")}>
             <LocaleSwitcher />
-            <SocialMediaButtons />
+            <div>---</div>
+            <Navigation locale={locale} copy={copy} />
           </div>
-          <Navigation locale={locale} copy={copy} />
         </div>
       )}
     </div>
