@@ -17,6 +17,11 @@ export default async function Page({
   const dictionary = await getDictionary(lang);
   const navigation = getNavigation({ locale: lang });
 
+  const newsletterCopy = {
+    ...dictionary.newsletter,
+    title: dictionary.home.newsletterTitle,
+  };
+
   return (
     <div className={styles.mainLayout}>
       <div className={styles.heading}>
@@ -30,7 +35,7 @@ export default async function Page({
         </section>
         <section>
           <Newsletter
-            copy={dictionary.home.newsletter}
+            copy={newsletterCopy}
             privacyPolicyUrl={navigation.privacyPolicy.url}
           />
         </section>

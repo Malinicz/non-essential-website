@@ -1,25 +1,26 @@
 {
   "websiteTitle": "Non-Essential Workers band website",
   "websiteDescription": "Non-Essential Workers band website",
+  "newsletter": {
+    "title": "newsletter",
+    "titleSuccess": "Thank you, it means the world to us!",
+    "description": "Subscribe to our newsletter to receive exclusive content and updates about our music.",
+    "descriptionSuccess": "We'll get back to you soon with some N.E.W. exclusive content.",
+    "form": {
+      "emailLabel": "email",
+      "emailPlaceholder": "youremail@gmail.com",
+      "emailFormattingErrorText": "Something's off with your email address, please check it again.",
+      "emailAlreadySubscribedErrorText": "You're already subscribed to our newsletter. Thanks!",
+      "emailGenericErrorText": "Something went wrong, please try again later or drop us a message at nonessentialworkers@gmail.com",
+      "submitButton": "Sign up",
+      "checkboxLabel": "I agree to receive newsletters and acknowledge that I have read and agree to the [html]Privacy Policy[html]."
+    }
+  },
   "home": {
     "heading": "N.E.W. Impossible single from debut EP out now",
     "streamingServicesTitle": "Hey, listen...",
     "streamingServicesDescription": "Available on all music platforms.",
-    "newsletter": {
-      "title": "...we'd like to hear from you too",
-      "titleSuccess": "Thank you, it means the world to us!",
-      "description": "Our music simply wouldn't exist without you. Drop us a message below to say hi or share your thoughts about our music.",
-      "descriptionSuccess": "We'll get back to you soon with some N.E.W. exclusive content.",
-      "form": {
-        "emailLabel": "email",
-        "emailPlaceholder": "youremail@gmail.com",
-        "emailFormattingErrorText": "Something's off with your email address, please check it again.",
-        "emailAlreadySubscribedErrorText": "You're already subscribed to our newsletter. Thanks!",
-        "emailGenericErrorText": "Something went wrong, please try again later or drop us a message at nonessentialworkers@gmail.com",
-        "submitButton": "Submit",
-        "checkboxLabel": "I agree to receive newsletters and acknowledge that I have read and agree to the [html]Privacy Policy[html]."
-      }
-    }
+    "newsletterTitle": "...we'd like to hear from you too"
   },
   "bio": {
     "heading": "bio",
@@ -34,7 +35,7 @@
       "heading": "Why are we N.E.W.?",
       "paragraphs": {
         "paragraph1": "As the darkness washed over us and civilization came crashing to a screeching halt - our values, priorities and understanding of what is truly essential came sharply into focus:",
-        "paragraph2": "Life is Essential.[html]Health is Essential.[html]People are Essential.[html]Rights are Essential.[html]Work is Essential.[html]Art is Essential.[html]Music is Essential.",
+        "paragraph2": "Life is Essential.[html]Health is Essential.[html]People are Essential. [html]Rights are Essential.[html]Work is Essential.[html]Art is Essential.[html]Music is Essential.",
         "paragraph3": "We wilfully embrace the hierarchy of needs that currently defines one's role in society, yet wholeheartedly reject any sense of permanence this role might suggest. The roles that may seem non-essential today, may be essential to our very survival tomorrow.",
         "paragraph4": "We are people. We are workers. We are musicians.",
         "paragraph5": "We are non-essential workers."
@@ -43,12 +44,21 @@
   },
   "music": {
     "heading": "music",
+    "streamingServicesDescription": "Our music is available on all major streaming platforms:",
     "singles": {
       "heading": "singles"
     }
   },
   "videos": {
-    "heading": "videos"
+    "heading": "videos",
+    "description": "If you enjoyed the video, please consider subscribing to our YouTube channel and following us on social media. We appreciate your support!"
+  },
+  "contact": {
+    "heading": "contact",
+    "paragraphs": {
+      "paragraph1": "We'd love to hear from you. Drop us a message below to say hi or share your thoughts about our music.",
+      "paragraph2": "You can also send us an email or leave a message on our social media."
+    }
   },
   "navigation": {
     "home": "home",

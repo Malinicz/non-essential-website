@@ -13,17 +13,18 @@ export default async function Page({
   const dictionary = await getDictionary(lang);
 
   return (
-    <div className="gap-y-m">
-      <div>
+    <div>
+      <section>
         <h1>{dictionary.videos.heading}</h1>
-      </div>
-      <div className="gap-y-l">
+        <p>{dictionary.videos.description}</p>
+      </section>
+      <section className="gap-y-l">
         {["impossible" as const, "fire" as const, "people" as const].map(
           (song) => (
             <YouTubePlugin key={song} song={song} />
           )
         )}
-      </div>
+      </section>
     </div>
   );
 }
