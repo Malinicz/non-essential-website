@@ -18,21 +18,19 @@ export default async function Page({
         <h1>{dictionary.music.heading}</h1>
         <h2>{dictionary.music.singles.heading}</h2>
       </div>
-      <div className={styles.albums}>
-        <div className={cx(styles.bandCampPluginSmall, "gap-y-s")}>
-          {["impossible" as const, "fire" as const, "people" as const].map(
-            (name) => (
-              <BandCampPlugin key={name} album={name} size="small" />
-            )
-          )}
-        </div>
-        <div className={cx(styles.bandCampPluginLarge, "gap-y-m")}>
-          {["impossible" as const, "fire" as const, "people" as const].map(
-            (name) => (
-              <BandCampPlugin key={name} album={name} size="large" />
-            )
-          )}
-        </div>
+      <div className={cx(styles.bandCampPluginSmall, "gap-y-s")}>
+        {["impossible" as const, "fire" as const, "people" as const].map(
+          (name) => (
+            <BandCampPlugin key={name} album={name} size="small" />
+          )
+        )}
+      </div>
+      <div className={cx(styles.bandCampPluginLarge, "gap-y-m")}>
+        {["impossible" as const, "fire" as const, "people" as const].map(
+          (name) => (
+            <BandCampPlugin key={name} album={name} size="large" />
+          )
+        )}
       </div>
     </div>
   );
