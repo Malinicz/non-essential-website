@@ -1,2 +1,2 @@
-export * from "./LazyPlayer";
-export * from "./Player";
+export { LazyPlayer } from "./LazyPlayer";
+export { Player } from "./Player";

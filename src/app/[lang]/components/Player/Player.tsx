@@ -22,7 +22,7 @@ const SONGS = [
 
 export type PropsType = Readonly<{ copy: { loading: string } }>;
 
-function Player({ copy }: PropsType) {
+export function Player({ copy }: PropsType) {
   const audioRef = React.useRef<HTMLAudioElement>(null);
 
   const [playing, setPlaying] = React.useState(false);

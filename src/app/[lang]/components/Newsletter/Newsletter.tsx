@@ -4,7 +4,7 @@ import React from "react";
 import { UserForm, PropsType as UserFormPropsType } from "./UserForm";
 import styles from "./Newsletter.module.scss";
 
-export type PropsType = Readonly<{
+type PropsType = Readonly<{
   privacyPolicyUrl: string;
   copy: {
     title: string;

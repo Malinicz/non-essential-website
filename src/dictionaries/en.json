@@ -21,6 +21,26 @@
       }
     }
   },
+  "bio": {
+    "heading": "bio",
+    "section1": {
+      "heading": "What is N.E.W.?",
+      "photoAltText": "Mirror reflection of the sea waves crashing against the rocks.",
+      "paragraphs": {
+        "paragraph1": "The synthesized sound of our present tense."
+      }
+    },
+    "section2": {
+      "heading": "Why are we N.E.W.?",
+      "paragraphs": {
+        "paragraph1": "As the darkness washed over us and civilization came crashing to a screeching halt - our values, priorities and understanding of what is truly essential came sharply into focus:",
+        "paragraph2": "Life is Essential.[html]Health is Essential.[html]People are Essential. [html]Rights are Essential.[html]Work is Essential.[html]Art is Essential.[html]Music is Essential.",
+        "paragraph3": "We wilfully embrace the hierarchy of needs that currently defines one's role in society, yet wholeheartedly reject any sense of permanence this role might suggest. The roles that may seem non-essential today, may be essential to our very survival tomorrow.",
+        "paragraph4": "We are people. We are workers. We are musicians.",
+        "paragraph5": "We are non-essential workers."
+      }
+    }
+  },
   "navigation": {
     "home": "home",
     "bio": "bio",

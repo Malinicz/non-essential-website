@@ -1,4 +1,4 @@
-$customBreakpoint: 1100px;
+$customBreakpoint: 800px;
 
 .mainLayout {
   display: grid;
@@ -10,7 +10,7 @@ $customBreakpoint: 1100px;
 
   @media (max-width: $customBreakpoint) {
     grid-template-columns: auto;
-    grid-template-areas: "header" "column2" "column1";
+    grid-template-areas: "header" "column1" "column2";
     column-gap: 0;
   }
 }
@@ -36,13 +36,14 @@ $customBreakpoint: 1100px;
 
 .column2 {
   grid-area: column2;
-  display: flex;
 
   @media (max-width: $customBreakpoint) {
     padding-bottom: $spacing-l;
   }
+}
 
-  @media (max-width: $sm-breakpoint) {
-    justify-content: center;
-  }
+.photo {
+  width: 100%;
+  height: auto;
+  max-width: 450px;
 }
