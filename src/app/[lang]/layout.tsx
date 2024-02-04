@@ -51,7 +51,7 @@ export default async function RootLayout({ children, params }: PropsType) {
         <div className={styles.bodyBackground} />
         <div className={styles.layout}>
           <div className={cx(styles.topSection, "gap-x-l")}>
-            <LazyPlayer />
+            <LazyPlayer copy={dictionary.player} />
             <LocaleSwitcher />
           </div>
           <div className={cx(styles.navigationSection, "gap-y-l")}>

@@ -3,6 +3,7 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import { IoRadio } from "react-icons/io5";
+import { PropsType } from "./Player";
 import styles from "./Player.module.scss";
 
 const Player = dynamic(() => import("./Player"), {
@@ -14,6 +15,6 @@ const Player = dynamic(() => import("./Player"), {
   ),
 });
 
-export function LazyPlayer() {
-  return <Player />;
+export function LazyPlayer(props: PropsType) {
+  return <Player {...props} />;
 }

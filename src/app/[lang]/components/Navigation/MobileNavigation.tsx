@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { IoRemove, IoAdd } from "react-icons/io5";
 import cx from "classnames";
 import { Locale } from "@/i18n-config";
-import { DictionaryType, getDictionary } from "@/get-dictionary";
+import { DictionaryType } from "@/get-dictionary";
 import styles from "./MobileNavigation.module.scss";
 import { Navigation } from ".";
 import { LazyPlayer, LocaleSwitcher, SocialMediaButtons } from "..";
@@ -29,7 +29,7 @@ export function MobileNavigation({ locale, copy }: PropsType) {
 
   return (
     <div className={styles.container}>
-      <LazyPlayer />
+      <LazyPlayer copy={copy.player} />
       <div className={cx(styles.menuButtonContainer, "gap-x-xxs")}>
         {isMenuOpen ? <IoRemove /> : <IoAdd />}
         <button onClick={toggleMenu} className={styles.menuButton}>

@@ -63,5 +63,8 @@
       }
     ]
   },
-  "cookieConsentText": "We use cookies to enhance your experience on our website. By continuing to use our site, you agree to our use of cookies. For more information, please read our [html]Privacy Policy[html]."
+  "cookieConsentText": "We use cookies to enhance your experience on our website. By continuing to use our site, you agree to our use of cookies. For more information, please read our [html]Privacy Policy[html].",
+  "player": {
+    "loading": "buffering"
+  }
 }

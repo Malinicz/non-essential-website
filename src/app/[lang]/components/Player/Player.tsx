@@ -12,6 +12,7 @@ import {
 import impossibleSrc from "./assets/impossible_compressed.mp3";
 import fireSrc from "./assets/fire_compressed.mp3";
 import peopleSrc from "./assets/people_compressed.mp3";
+import { TextLoader } from "../TextLoader";
 
 const SONGS = [
   { name: "impossible", src: impossibleSrc },
@@ -19,7 +20,9 @@ const SONGS = [
   { name: "people", src: peopleSrc },
 ];
 
-function Player() {
+export type PropsType = Readonly<{ copy: { loading: string } }>;
+
+function Player({ copy }: PropsType) {
   const audioRef = React.useRef<HTMLAudioElement>(null);
 
   const [playing, setPlaying] = React.useState(false);
@@ -63,7 +66,6 @@ function Player() {
   }, [playing]);
 
   const handleCanPlayThrough = React.useCallback(() => {
-    console.log("can play through");
     setLoading(false);
   }, []);
 
@@ -83,7 +85,7 @@ function Player() {
         onCanPlayThrough={handleCanPlayThrough}
       />
       <div className={styles.songName}>
-        {loading ? "buffering..." : activeAudio.name}
+        {loading ? <TextLoader text={copy.loading} /> : activeAudio.name}
       </div>
       <div className={styles.controls}>
         <div className={styles.controlButton}>
