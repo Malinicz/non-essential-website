@@ -6,4 +6,6 @@ export * from './Newsletter';
 export * from './Player';
 export * from './SocialMediaButtons';
 export * from './StreamingServicesList';
+export * from './TextLoader';
 export * from './UserForm';
+export * from './YouTubePlugin';
