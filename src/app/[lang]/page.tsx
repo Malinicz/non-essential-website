@@ -36,7 +36,7 @@ export default async function Page({
         </section>
       </div>
       <div className={styles.column2}>
-        <BandCampPlugin album="impossible" />
+        <BandCampPlugin album="impossible" size="large" />
       </div>
     </div>
   );

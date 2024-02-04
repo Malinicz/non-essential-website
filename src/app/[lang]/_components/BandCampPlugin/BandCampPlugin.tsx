@@ -3,7 +3,7 @@ import styles from "./BandCampPlugin.module.scss";
 
 type PropsType = Readonly<{
   album: "impossible" | "fire" | "people";
-  size?: "small" | "large";
+  size: "small" | "large";
 }>;
 
 export function BandCampPlugin({ album, size }: PropsType) {
