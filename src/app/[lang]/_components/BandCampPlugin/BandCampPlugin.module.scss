@@ -1,12 +1,21 @@
-.container {
+.containerLarge {
   border: 0;
-  width: 390px;
-  height: 482px;
-}
+  width: 100%;
+  height: auto;
 
-@media (max-width: 600px) {
-  .container {
+  @media (max-width: $md-breakpoint) {
+    width: 390px;
+    height: 482px;
+  }
+
+  @media (max-width: $sm-breakpoint) {
     width: 300px;
     height: 392px;
   }
+}
+
+.containerSmall {
+  border: 0;
+  width: 100%;
+  height: auto;
 }

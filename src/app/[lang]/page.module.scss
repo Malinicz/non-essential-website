@@ -1,5 +1,3 @@
-$customBreakpoint: 1100px;
-
 .mainLayout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -8,7 +6,7 @@ $customBreakpoint: 1100px;
     "column1 column2";
   column-gap: 64px;
 
-  @media (max-width: $customBreakpoint) {
+  @media (max-width: $md-breakpoint) {
     grid-template-columns: auto;
     grid-template-areas: "header" "column2" "column1";
     column-gap: 0;
@@ -17,7 +15,6 @@ $customBreakpoint: 1100px;
 
 .heading {
   grid-area: header;
-  max-width: 750px;
 }
 
 .column1,
@@ -25,7 +22,7 @@ $customBreakpoint: 1100px;
   width: 100%;
   max-width: 444px;
 
-  @media (max-width: $customBreakpoint) {
+  @media (max-width: $md-breakpoint) {
     max-width: 100%;
   }
 }
@@ -38,7 +35,7 @@ $customBreakpoint: 1100px;
   grid-area: column2;
   display: flex;
 
-  @media (max-width: $customBreakpoint) {
+  @media (max-width: $md-breakpoint) {
     padding-bottom: $spacing-l;
   }
 

@@ -41,6 +41,12 @@
       }
     }
   },
+  "music": {
+    "heading": "music",
+    "singles": {
+      "heading": "singles"
+    }
+  },
   "navigation": {
     "home": "home",
     "bio": "bio",

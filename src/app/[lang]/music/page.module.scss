@@ -1,0 +1,20 @@
+.albums {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $sm-breakpoint) {
+    align-items: center;
+  }
+}
+
+.bandCampPluginLarge {
+  @media (min-width: $sm-breakpoint) {
+    display: none;
+  }
+}
+
+.bandCampPluginSmall {
+  @media (max-width: $sm-breakpoint) {
+    display: none;
+  }
+}
