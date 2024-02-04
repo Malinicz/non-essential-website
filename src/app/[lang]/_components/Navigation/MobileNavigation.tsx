@@ -27,6 +27,18 @@ export function MobileNavigation({ locale, copy }: PropsType) {
     setIsMenuOpen(false);
   }, [pathname]);
 
+  React.useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isMenuOpen]);
+
   return (
     <div className={styles.container}>
       <LazyPlayer copy={copy.player} />
