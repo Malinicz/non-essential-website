@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./page.module.scss";
-import { BandCampPlugin } from "./components";
+import {
+  BandCampPlugin,
+  StreamingServicesList,
+  Newsletter,
+} from "./_components";
 import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
-import { StreamingServicesList } from "./components/StreamingServicesList";
-import { Newsletter } from "./components/Newsletter";
 import { getNavigation } from "@/utils";
 
 export default async function Page({

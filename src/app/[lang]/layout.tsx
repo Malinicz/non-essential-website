@@ -6,13 +6,17 @@ import cx from "classnames";
 import { Locale, i18n } from "@/i18n-config";
 import { futuraFont, antonFont } from "@/fonts";
 import { getDictionary } from "@/get-dictionary";
+import { getNavigation } from "@/utils";
 import styles from "./layout.module.scss";
 import "./globals.scss";
-import { LocaleSwitcher, LazyPlayer } from "./components";
-import { getNavigation } from "@/utils";
-import { MobileNavigation, Navigation } from "./components/Navigation";
-import { CookieConsentBanner } from "./components/CookieConsentBanner";
-import { SocialMediaButtons } from "./components/SocialMediaButtons";
+import {
+  LocaleSwitcher,
+  LazyPlayer,
+  MobileNavigation,
+  Navigation,
+  CookieConsentBanner,
+  SocialMediaButtons,
+} from "./_components";
 
 export async function generateMetadata({
   params,
