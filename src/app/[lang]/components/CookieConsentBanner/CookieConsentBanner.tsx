@@ -36,7 +36,9 @@ export function CookieConsentBanner({ copy, privacyPolicyUrl }: PropsType) {
       <div>
         {wrapTextWithComponent(
           ({ children }: React.PropsWithChildren) => (
-            <Link href={privacyPolicyUrl}>{children}</Link>
+            <Link href={privacyPolicyUrl} className={styles.link}>
+              {children}
+            </Link>
           ),
           copy.cookieConsentText
         )}
