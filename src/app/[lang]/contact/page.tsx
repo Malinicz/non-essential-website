@@ -25,8 +25,6 @@ export default async function Page({
       <section>
         <h1>{dictionary.contact.heading}</h1>
         <p>{dictionary.contact.paragraphs.paragraph1}</p>
-        <p>[FORM COMING SOON]</p>
-        <p>{dictionary.contact.paragraphs.paragraph2}</p>
         <div className={cx(styles.contactInfo, "gap-y-s")}>
           <div className={cx(styles.contactInfoItem, "gap-x-xs")}>
             <IoMailOutline size={25} />

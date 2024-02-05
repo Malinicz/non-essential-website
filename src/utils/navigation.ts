@@ -26,6 +26,11 @@ export function getMenuItems(locale: Locale, dictionary: DictionaryType) {
   const navigation = getNavigation({ locale });
 
   return {
+    home: {
+      id: "home",
+      name: dictionary.navigation.home,
+      url: navigation.home.url,
+    },
     bio: {
       id: "bio",
       name: dictionary.navigation.bio,

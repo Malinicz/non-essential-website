@@ -16,13 +16,13 @@ export function BandCampPlugin({ album, size }: PropsType) {
   };
 
   return (
-    <iframe
+    <div
       className={cx({
         [styles.containerLarge]: size === "large",
         [styles.containerSmall]: size === "small",
       })}
-      src={albums[album]}
-      seamless
-    />
+    >
+      <iframe src={albums[album]} seamless />
+    </div>
   );
 }
