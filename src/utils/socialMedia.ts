@@ -7,6 +7,10 @@ export const socialMedia = {
     name: "Facebook",
     url: "https://www.facebook.com/nonessentialworkers",
   },
+  youTube: {
+    name: "YouTube",
+    url: "https://www.youtube.com/channel/UCDSE62iXTuOG2gLoUQrWK1A",
+  },
 };
 
 export const socialMediaList = Object.values(socialMedia);

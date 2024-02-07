@@ -1,0 +1,69 @@
+.mainLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "header header"
+    "column1 column2";
+  column-gap: 64px;
+
+  @media (max-width: $md-breakpoint) {
+    grid-template-columns: auto;
+    grid-template-areas: "header" "column2" "column1";
+    column-gap: 0;
+  }
+}
+
+.heading {
+  grid-area: header;
+}
+
+.column1,
+.column2 {
+  width: 100%;
+  max-width: 444px;
+
+  @media (max-width: $md-breakpoint) {
+    max-width: 100%;
+  }
+}
+
+.column1 {
+  grid-area: column1;
+}
+
+.column2 {
+  grid-area: column2;
+
+  @media (max-width: $md-breakpoint) {
+    padding-bottom: $spacing-l;
+  }
+}
+
+.videoContainer {
+  max-width: 500px;
+}
+
+.videoPlaceholder {
+  position: relative;
+  padding-bottom: 100%;
+  height: 0;
+  overflow: hidden;
+  background: #ebedee;
+  border: 1px dashed $gray;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}

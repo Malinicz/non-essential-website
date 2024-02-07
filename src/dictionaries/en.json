@@ -59,6 +59,31 @@
       "paragraph1": "We'd love to hear from you. Drop us a message if you want to share your thoughts about our music, or maybe you would like us to play a concert in your city. Let us know!"
     }
   },
+  "resources": {
+    "heading": "Hello! We're N.E.W.",
+    "description": "Thanks for stopping by. We're a band from PL/US and we make electronic music. We're glad you're here. If you want to know more about us, check out the links below.",
+    "music": {
+      "heading": "Music",
+      "albumCover": "album cover"
+    },
+    "bio": {
+      "heading": "Short bio",
+      "paragraphs": {
+        "paragraph1": "Here goes short bio that will be easy to copy and paste."
+      }
+    },
+    "photos": {
+      "heading": "Photos",
+      "pressPack": "Photos press pack"
+    },
+    "videos": {
+      "heading": "Videos",
+      "youTubeChannel": "N.E.W. YouTube channel"
+    },
+    "socialMedia": {
+      "heading": "Social media"
+    }
+  },
   "navigation": {
     "home": "home",
     "bio": "bio",
