@@ -1,6 +1,5 @@
 import React from "react";
 import type { Metadata } from "next";
-import Head from "next/head";
 import Link from "next/link";
 import { Analytics } from "@vercel/analytics/react";
 import cx from "classnames";
@@ -30,26 +29,12 @@ export async function generateMetadata({
     icons: {
       icon: "/favicon.ico",
     },
-    openGraph: {
-      title: dictionary.meta.openGraph.title,
-      description: dictionary.meta.openGraph.description,
-      images: [
-        {
-          url: "/og_image.jpg",
-          width: 1200,
-          height: 630,
-        },
-      ],
-      url: "https://nonessentialworkers.com",
-      siteName: "Non-Essential Workers",
-      type: "website",
-    },
     metadataBase: new URL("https://nonessentialworkers.com"),
     alternates: {
       canonical: "/",
       languages: {
         en: "/en",
-        pl: "/de",
+        pl: "/pl",
       },
     },
   };
