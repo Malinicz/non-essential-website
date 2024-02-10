@@ -1,5 +1,6 @@
-import React, { Suspense } from "react";
+import React from "react";
 import type { Metadata } from "next";
+import Head from "next/head";
 import Link from "next/link";
 import { Analytics } from "@vercel/analytics/react";
 import cx from "classnames";
@@ -17,6 +18,7 @@ import {
   CookieConsentBanner,
   SocialMediaButtons,
 } from "./_components";
+import ogImage from "./_assets/og_image.jpg";
 
 export async function generateMetadata({
   params,
@@ -51,6 +53,10 @@ export default async function RootLayout({ children, params }: PropsType) {
       lang={params.lang}
       className={cx(futuraFont.variable, antonFont.variable)}
     >
+      <Head>
+        <title>Non-Essential Workers</title>
+        <meta property="og:image" content={ogImage.src} />
+      </Head>
       <body>
         <div className={styles.bodyBackground} />
         <div className={styles.layout}>

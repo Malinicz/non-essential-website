@@ -74,4 +74,8 @@
 
 .copyButtonContainer {
   margin-top: $spacing-xs;
+
+  @media (max-width: $md-breakpoint) {
+    margin-top: 2px;
+  }
 }
