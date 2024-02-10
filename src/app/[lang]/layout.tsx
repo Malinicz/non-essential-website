@@ -33,11 +33,13 @@ export async function generateMetadata({
     openGraph: {
       title: dictionary.meta.openGraph.title,
       description: dictionary.meta.openGraph.description,
-      images: {
-        url: "/og_image.jpg",
-        width: 1200,
-        height: 630,
-      },
+      images: [
+        {
+          url: "/og_image.jpg",
+          width: 1200,
+          height: 630,
+        },
+      ],
       url: "https://nonessentialworkers.com",
       siteName: "Non-Essential Workers",
       type: "website",
