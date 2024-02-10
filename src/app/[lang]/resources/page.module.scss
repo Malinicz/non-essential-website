@@ -67,3 +67,11 @@
   display: flex;
   align-items: center;
 }
+
+.headerWithButtonContainer {
+  display: flex;
+}
+
+.copyButtonContainer {
+  margin-top: $spacing-xs;
+}

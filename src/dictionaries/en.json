@@ -74,7 +74,7 @@
     },
     "photos": {
       "heading": "Photos",
-      "pressPack": "Photos press pack"
+      "pressPack": "Photos press pack (zip)"
     },
     "videos": {
       "heading": "Videos",
@@ -129,5 +129,9 @@
   "cookieConsentText": "We use cookies to enhance your experience on our website. By continuing to use our site, you agree to our use of cookies. For more information, please read our [html]Privacy Policy[html].",
   "player": {
     "loading": "buffering"
+  },
+  "copyButton": {
+    "buttonLabel": "Copy",
+    "afterCopyLabel": "Copied!"
   }
 }

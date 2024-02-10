@@ -1,10 +1,6 @@
 import React from "react";
 import cx from "classnames";
 import Head from "next/head";
-import { getDictionary } from "@/get-dictionary";
-import { Locale } from "@/i18n-config";
-import styles from "./page.module.scss";
-import { getAssetsUrls, getMusicAssetsList, socialMedia } from "@/utils";
 import {
   IoDocumentOutline,
   IoImagesOutline,
@@ -13,6 +9,11 @@ import {
   IoLogoYoutube,
   IoMusicalNotesOutline,
 } from "react-icons/io5";
+import { getDictionary } from "@/get-dictionary";
+import { Locale } from "@/i18n-config";
+import { getAssetsUrls, getMusicAssetsList, socialMedia } from "@/utils";
+import { CopyButton } from "../_components";
+import styles from "./page.module.scss";
 
 export default async function Page({
   params: { lang },
@@ -71,13 +72,23 @@ export default async function Page({
             </div>
           </section>
           <section>
-            <h2>{dictionary.resources.bio.heading} (TODO)</h2>
+            <div className={cx(styles.headerWithButtonContainer, "gap-x-s")}>
+              <h2>{dictionary.resources.bio.heading}</h2>
+              <div className={styles.copyButtonContainer}>
+                <CopyButton
+                  copy={dictionary.copyButton}
+                  text={Object.values(dictionary.resources.bio.paragraphs).join(
+                    "\n"
+                  )}
+                />
+              </div>
+            </div>
             {Object.values(dictionary.resources.bio.paragraphs).map((p, i) => (
               <p key={i}>{p}</p>
             ))}
           </section>
           <section>
-            <h2>{dictionary.resources.photos.heading} (TODO) </h2>
+            <h2>{dictionary.resources.photos.heading}</h2>
             <div className={cx(styles.item, "gap-x-xs")}>
               <IoImagesOutline size={20} />
               <a href={assetsUrls.photos.pressPack} download>
@@ -86,7 +97,7 @@ export default async function Page({
             </div>
           </section>
           <section>
-            <h2>{dictionary.resources.videos.heading} (TODO) </h2>
+            <h2>{dictionary.resources.videos.heading}</h2>
             <div className={cx(styles.item, "gap-x-xs")}>
               <IoLogoYoutube size={20} />
               <a

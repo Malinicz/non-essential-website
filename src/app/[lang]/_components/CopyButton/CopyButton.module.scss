@@ -1,0 +1,26 @@
+.copyButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 $spacing-xs;
+  height: 20px;
+  background: $graphite;
+  border: 1px solid $graphite;
+  border-radius: $spacing-xs;
+  font-size: 10px;
+  color: $white;
+  text-transform: uppercase;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: $cream;
+    color: $graphite;
+  }
+
+  &:disabled {
+    background: $gray;
+    border-color: $gray;
+    color: $white;
+    pointer-events: none;
+  }
+}

@@ -59,11 +59,11 @@ export function UserForm({ copy, onSuccess, privacyPolicyUrl }: PropsType) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    setLoading(true);
-
     if (!validateEmail(emailValue)) {
       return setEmailErrorMessage(copy.emailFormattingErrorText);
     }
+
+    setLoading(true);
 
     const result = await saveSubscriber({ email: emailValue, hasOptedIn });
 

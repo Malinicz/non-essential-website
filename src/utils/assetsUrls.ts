@@ -40,7 +40,7 @@ export function getAssetsUrls() {
       },
     },
     photos: {
-      pressPack: "todo",
+      pressPack: getGoogleDriveDownloadUrl("1NVdg9UVtOCM9rX8dijl47NA_OguRslm0"),
     },
   };
 }

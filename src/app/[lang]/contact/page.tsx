@@ -3,7 +3,7 @@ import cx from "classnames";
 import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
 import styles from "./page.module.scss";
-import { Newsletter } from "../_components";
+import { CopyButton, Newsletter } from "../_components";
 import { getNavigation } from "@/utils";
 import {
   IoLogoFacebook,
@@ -11,6 +11,8 @@ import {
   IoMailOutline,
 } from "react-icons/io5";
 import { socialMedia } from "@/utils";
+
+const EMAIL = "nonessentialworkers@gmail.com";
 
 export default async function Page({
   params: { lang },
@@ -28,9 +30,8 @@ export default async function Page({
         <div className={cx(styles.contactInfo, "gap-y-s")}>
           <div className={cx(styles.contactInfoItem, "gap-x-xs")}>
             <IoMailOutline size={25} />
-            <a href="mailto:nonessentialworkers@gmail.com">
-              nonessentialworkers@gmail.com
-            </a>
+            <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+            <CopyButton copy={dictionary.copyButton} text={EMAIL} />
           </div>
           <div className={cx(styles.contactInfoItem, "gap-x-xs")}>
             <IoLogoInstagram size={25} />
