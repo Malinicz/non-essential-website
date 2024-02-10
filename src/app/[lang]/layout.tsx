@@ -18,7 +18,6 @@ import {
   CookieConsentBanner,
   SocialMediaButtons,
 } from "./_components";
-import ogImage from "./_assets/og_image.jpg";
 
 export async function generateMetadata({
   params,
