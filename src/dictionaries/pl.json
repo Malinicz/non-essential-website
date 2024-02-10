@@ -1,6 +1,4 @@
 {
-  "websiteTitle": "Non-Essential Workers band website",
-  "websiteDescription": "Non-Essential Workers band website",
   "newsletter": {
     "title": "newsletter",
     "titleSuccess": "Thank you, it means the world to us!",
@@ -133,5 +131,13 @@
   "copyButton": {
     "buttonLabel": "Copy",
     "afterCopyLabel": "Copied!"
+  },
+  "meta": {
+    "websiteTitle": "Non-Essential Workers band website",
+    "websiteDescription": "Non-Essential Workers band website",
+    "openGraph": {
+      "title": "Non-Essential Workers",
+      "description": "The synthesized sound of our present tense."
+    }
   }
 }

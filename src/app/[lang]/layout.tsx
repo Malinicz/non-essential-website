@@ -26,10 +26,30 @@ export async function generateMetadata({
   const dictionary = await getDictionary(params.lang);
 
   return {
-    title: dictionary.websiteTitle,
-    description: dictionary.websiteDescription,
+    title: dictionary.meta.websiteTitle,
+    description: dictionary.meta.websiteDescription,
     icons: {
-      icon: "./favicon.ico",
+      icon: "/favicon.ico",
+    },
+    openGraph: {
+      title: dictionary.meta.openGraph.title,
+      description: dictionary.meta.openGraph.description,
+      images: {
+        url: "https://nonessentialworkers.com/og_image.jpg",
+        width: 1200,
+        height: 630,
+      },
+      url: "https://nonessentialworkers.com",
+      siteName: "Non-Essential Workers",
+      type: "website",
+    },
+    metadataBase: new URL("https://nonessentialworkers.com"),
+    alternates: {
+      canonical: "/",
+      languages: {
+        en: "/en",
+        pl: "/de",
+      },
     },
   };
 }
@@ -53,10 +73,6 @@ export default async function RootLayout({ children, params }: PropsType) {
       lang={params.lang}
       className={cx(futuraFont.variable, antonFont.variable)}
     >
-      <Head>
-        <title>Non-Essential Workers</title>
-        <meta property="og:image" content={ogImage.src} />
-      </Head>
       <body>
         <div className={styles.bodyBackground} />
         <div className={styles.layout}>
