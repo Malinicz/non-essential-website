@@ -35,7 +35,7 @@ export async function generateMetadata({
       title: dictionary.meta.openGraph.title,
       description: dictionary.meta.openGraph.description,
       images: {
-        url: "https://nonessentialworkers.com/og_image.jpg",
+        url: "/og_image.jpg",
         width: 1200,
         height: 630,
       },
