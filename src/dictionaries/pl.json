@@ -1,9 +1,9 @@
 {
   "newsletter": {
-    "title": "newsletter",
+    "title": "N.E.W.S.LETTER",
     "titleSuccess": "Thank you, it means the world to us!",
-    "description": "Subscribe to our newsletter to receive exclusive content and updates about our music.",
-    "descriptionSuccess": "We'll get back to you soon with some N.E.W. exclusive content.",
+    "description": "Support us by subscribing to our N.E.W.S.letter to receive exclusive content, art lyric books, behind the scenes photos, secret shows and exclusive music releases.",
+    "descriptionSuccess": "We'll get back to you soon with some exclusive content from our debut EP - First Shift.",
     "form": {
       "emailLabel": "email",
       "emailPlaceholder": "youremail@gmail.com",
@@ -15,10 +15,10 @@
     }
   },
   "home": {
-    "heading": "N.E.W. Impossible single from debut EP out now",
-    "streamingServicesTitle": "Hey, listen...",
-    "streamingServicesDescription": "Available on all music platforms.",
-    "newsletterTitle": "...we'd like to hear from you too"
+    "heading": "N.E.W. IMPOSSIBLE SINGLE FROM OUR DEBUT EP FIRST SHIFT!",
+    "streamingServicesTitle": "HEY, LISTEN UP...",
+    "streamingServicesDescription": "… N.E.W. Music is available on your favorite platforms.",
+    "newsletterTitle": "BUT DON'T JUST STREAM A LITTLE STREAM…"
   },
   "bio": {
     "heading": "bio",
