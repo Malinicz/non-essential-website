@@ -8,11 +8,12 @@ import {
   IoLogoInstagram,
   IoLogoYoutube,
   IoMusicalNotesOutline,
+  IoImageOutline,
 } from "react-icons/io5";
 import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
 import { getAssetsUrls, getMusicAssetsList, socialMedia } from "@/utils";
-import { CopyButton } from "../_components";
+import { CopyButton, ExpandableList } from "../_components";
 import styles from "./page.module.scss";
 
 export default async function Page({
@@ -23,6 +24,84 @@ export default async function Page({
   const dictionary = await getDictionary(lang);
   const assetsUrls = getAssetsUrls();
   const musicAssetsList = getMusicAssetsList();
+
+  const musicAssetsElements = musicAssetsList.map((item) => {
+    return (
+      <div key={item.name} className="gap-y-xs">
+        <div className={cx(styles.item, "gap-x-xs")}>
+          {item.type === "album" ? (
+            <IoDocumentOutline size={20} />
+          ) : (
+            <IoMusicalNotesOutline size={20} />
+          )}
+          <a href={item.mp3} download>
+            {item.name}{" "}
+            {item.type === "album"
+              ? `(${dictionary.resources.compressed} .mp3)`
+              : "(.mp3)"}
+          </a>
+        </div>
+        {item.mp3Censored && (
+          <div className={cx(styles.item, "gap-x-xs")}>
+            <IoMusicalNotesOutline size={20} />
+            <a href={item.mp3Censored} download>
+              {item.name} ({dictionary.resources.censored} .mp3)
+            </a>
+          </div>
+        )}
+        <div className={cx(styles.item, "gap-x-xs")}>
+          {item.type === "album" ? (
+            <IoDocumentOutline size={20} />
+          ) : (
+            <IoMusicalNotesOutline size={20} />
+          )}
+          <a href={item.wav} download>
+            {item.name}{" "}
+            {item.type === "album"
+              ? `(${dictionary.resources.compressed} .wav)`
+              : "(.wav)"}
+          </a>
+        </div>
+        {item.wavCensored && (
+          <div className={cx(styles.item, "gap-x-xs")}>
+            <IoMusicalNotesOutline size={20} />
+            <a href={item.wavCensored} download>
+              {item.name} ({dictionary.resources.censored} .wav)
+            </a>
+          </div>
+        )}
+        <div className={cx(styles.item, "gap-x-xs")}>
+          {item.type === "album" ? (
+            <IoDocumentOutline size={20} />
+          ) : (
+            <IoMusicalNotesOutline size={20} />
+          )}
+          <a href={item.wav24bit} download>
+            {item.name}{" "}
+            {item.type === "album"
+              ? `(${dictionary.resources.compressed} .wav 24bit)`
+              : "(.wav 24bit)"}
+          </a>
+        </div>
+        {item.wav24bitCensored && (
+          <div className={cx(styles.item, "gap-x-xs")}>
+            <IoMusicalNotesOutline size={20} />
+            <a href={item.wav24bitCensored} download>
+              {item.name} ({dictionary.resources.censored} .wav 24bit)
+            </a>
+          </div>
+        )}
+        {item.albumCover && (
+          <div className={cx(styles.item, "gap-x-xs")}>
+            <IoImageOutline size={20} />
+            <a href={item.albumCover} download>
+              {item.name} ({dictionary.resources.music.albumCover} .jpg)
+            </a>
+          </div>
+        )}
+      </div>
+    );
+  });
 
   return (
     <>
@@ -40,35 +119,13 @@ export default async function Page({
           </section>
           <section>
             <h2>{dictionary.resources.music.heading}</h2>
-            <div className={cx(styles.musicItemsList, "gap-y-m")}>
-              {musicAssetsList.map((item) => (
-                <div key={item.name} className="gap-y-xs">
-                  <div className={cx(styles.item, "gap-x-xs")}>
-                    <IoMusicalNotesOutline size={20} />
-                    <a href={item.mp3} download>
-                      {item.name} (mp3)
-                    </a>
-                  </div>
-                  <div className={cx(styles.item, "gap-x-xs")}>
-                    <IoMusicalNotesOutline size={20} />
-                    <a href={item.wav} download>
-                      {item.name} (wav)
-                    </a>
-                  </div>
-                  <div className={cx(styles.item, "gap-x-xs")}>
-                    <IoMusicalNotesOutline size={20} />
-                    <a href={item.wav24bit} download>
-                      {item.name} (wav 24bit)
-                    </a>
-                  </div>
-                  <div className={cx(styles.item, "gap-x-xs")}>
-                    <IoDocumentOutline size={20} />
-                    <a href={item.albumCover} download>
-                      {item.name} {dictionary.resources.music.albumCover} (jpg)
-                    </a>
-                  </div>
-                </div>
-              ))}
+            <div className="gap-y-m">
+              <p>{dictionary.resources.music.description}</p>
+              <ExpandableList
+                list={musicAssetsElements}
+                initialItemsCount={1}
+                copy={dictionary.expandableList}
+              />
             </div>
           </section>
           <section>

@@ -1,0 +1,12 @@
+.buttonLink {
+  text-decoration: underline;
+  color: $black;
+
+  &:hover {
+    background: $graphite;
+    color: $cream;
+    text-decoration: none;
+    transition: all 0.05s ease-in;
+    border-radius: 2px;
+  }
+}

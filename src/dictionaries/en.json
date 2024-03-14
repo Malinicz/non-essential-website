@@ -59,9 +59,12 @@
   },
   "resources": {
     "heading": "Hello! We're N.E.W.",
-    "description": "Thanks for stopping by. We're a band from PL/US and we make electronic music. We're glad you're here. If you want to know more about us, check out the links below.",
+    "description": "Thanks for stopping by. We're a synth trio from US/PL and we make electronic music. We're glad you're here. If you want to know more about us, check out the links below.",
+    "compressed": "compressed zip",
+    "censored": "censored",
     "music": {
       "heading": "Music",
+      "description": "We store our files on Google Drive. In case it says it cannot scan the file for viruses because it's too large, just click 'download anyways' button - it's safe :)",
       "albumCover": "album cover"
     },
     "bio": {
@@ -140,5 +143,9 @@
       "title": "Non-Essential Workers",
       "description": "The synthesized sound of our present tense."
     }
+  },
+  "expandableList": {
+    "showMoreButton": "Show more",
+    "showLessButton": "Show less"
   }
 }
