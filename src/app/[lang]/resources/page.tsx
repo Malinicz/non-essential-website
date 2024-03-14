@@ -78,7 +78,7 @@ export default async function Page({
                 <CopyButton
                   copy={dictionary.copyButton}
                   text={Object.values(dictionary.resources.bio.paragraphs).join(
-                    "\n"
+                    "\n\n"
                   )}
                 />
               </div>

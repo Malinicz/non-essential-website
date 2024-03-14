@@ -34,8 +34,9 @@ export default async function Page({
       <div className={styles.column2}>
         <h2>{dictionary.bio.section2.heading}</h2>
         <p>{dictionary.bio.section2.paragraphs.paragraph1}</p>
+        <p>{dictionary.bio.section2.paragraphs.paragraph2}</p>
         <p>
-          {dictionary.bio.section2.paragraphs.paragraph2
+          {dictionary.bio.section2.paragraphs.paragraph3
             .split("[html]")
             .map((text) => (
               <>
@@ -44,7 +45,6 @@ export default async function Page({
               </>
             ))}
         </p>
-        <p>{dictionary.bio.section2.paragraphs.paragraph3}</p>
         <p>{dictionary.bio.section2.paragraphs.paragraph4}</p>
         <p>{dictionary.bio.section2.paragraphs.paragraph5}</p>
       </div>
