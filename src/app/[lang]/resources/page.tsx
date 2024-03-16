@@ -192,13 +192,13 @@ export default async function Page({
             </div>
           </section>
         </div>
-        <div className={styles.column2}>
+        {/* <div className={styles.column2}>
           <div className={styles.videoContainer}>
             <div className={styles.videoPlaceholder}>
               <div>video placeholder</div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
