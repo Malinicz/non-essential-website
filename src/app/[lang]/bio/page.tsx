@@ -47,6 +47,16 @@ export default async function Page({
         </p>
         <p>{dictionary.bio.section2.paragraphs.paragraph4}</p>
         <p>{dictionary.bio.section2.paragraphs.paragraph5}</p>
+        <p>
+          {dictionary.bio.section2.paragraphs.paragraph6
+            .split("[html]")
+            .map((text) => (
+              <>
+                {text}
+                <br />
+              </>
+            ))}
+        </p>
       </div>
     </div>
   );
