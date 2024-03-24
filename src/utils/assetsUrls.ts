@@ -31,7 +31,7 @@ export function getAssetsUrls(): GetAssetsUrlsOutputType {
           "1Oi8__lhAmPx7V8tpeS15zKXkxG5X0u7n"
         ),
         albumCover: getGoogleDriveDownloadUrl(
-          "1Ok-prri1JzDZYLLyYuud0zOeOPkm9cea"
+          "1tQVgIss18I4y7wZlcJz1ZhMbZ74ZwD-d"
         ),
       },
       impossible: {
@@ -43,7 +43,7 @@ export function getAssetsUrls(): GetAssetsUrlsOutputType {
         ),
         mp3: getGoogleDriveDownloadUrl("1OIJXh__67N713edXUH15qZSc0GDf9MsT"),
         albumCover: getGoogleDriveDownloadUrl(
-          "10OKisJe6KKDHwSKaS0QklPcKwnn9S8xu"
+          "11Hm-fZeAgYWvPiUJa6L9fGIWFaVdSdFM"
         ),
       },
       weight: {
@@ -91,7 +91,7 @@ export function getAssetsUrls(): GetAssetsUrlsOutputType {
         ),
         mp3: getGoogleDriveDownloadUrl("1lsz3nw6fvpzegsffofZvZFLoYYMBZuPM"),
         albumCover: getGoogleDriveDownloadUrl(
-          "1j0-IsfOKgUJjhxqNcWU2Eo-NygOVR3tX"
+          "1iROBwcmZ_CtmQeKfqEdprcOUt4fgRxHT"
         ),
       },
       people: {
@@ -103,7 +103,7 @@ export function getAssetsUrls(): GetAssetsUrlsOutputType {
         ),
         mp3: getGoogleDriveDownloadUrl("1Vu9GfKsle2OQcYXw9Us5Jkei2m9idbBy"),
         albumCover: getGoogleDriveDownloadUrl(
-          "1Ko_zOW3jO-lewyNmdXJMhHKeJAy8Dd7z"
+          "1LDFEMocV2IiUa2m0zjg8Cq89bXAm6f0c"
         ),
       },
     },
