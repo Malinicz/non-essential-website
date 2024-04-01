@@ -65,7 +65,7 @@
     "censored": "ocenzurowany",
     "music": {
       "heading": "Muzyka",
-      "description": "Nasze pliki trzymamy na Google Drive. Jeśli przy próbie ściągnięcia wyświetli się komunikat dotyczący nieudanej próby przeskanowania zawartości, kliknij 'download anyways' - w naszych plikach nie ma wirusów :)",
+      "description": "Nasze pliki trzymamy na Google Drive. Jeśli przy próbie ściągnięcia wyświetli się komunikat dotyczący nieudanej próby przeskanowania zawartości, kliknij 'pobierz mimo to' - w naszych plikach nie ma wirusów :)",
       "albumCover": "okładka albumu"
     },
     "bio": {
@@ -134,19 +134,19 @@
     "loading": "buffering"
   },
   "copyButton": {
-    "buttonLabel": "Copy",
-    "afterCopyLabel": "Copied!"
+    "buttonLabel": "Kopiuj",
+    "afterCopyLabel": "Skopiowano!"
   },
   "meta": {
-    "websiteTitle": "Non-Essential Workers band website",
-    "websiteDescription": "Non-Essential Workers band website",
+    "websiteTitle": "Non-Essential Workers - oficjalna strona zespołu",
+    "websiteDescription": "Non-Essential Workers - oficjalna strona zespołu",
     "openGraph": {
       "title": "Non-Essential Workers",
       "description": "The synthesized sound of our present tense."
     }
   },
   "expandableList": {
-    "showMoreButton": "Show more",
-    "showLessButton": "Show less"
+    "showMoreButton": "Pokaż więcej",
+    "showLessButton": "Pokaż mniej"
   }
 }
