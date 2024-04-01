@@ -1,15 +1,15 @@
 import localFont from "next/font/local";
 import { Anton } from "next/font/google";
 
-export const futuraFont = localFont({
-  src: "../public/futura.ttf",
+export const mainFont = localFont({
+  src: "../public/KumbhSans.ttf",
   display: "swap",
-  variable: "--font-futura",
+  variable: "--font-main",
 });
 
-export const antonFont = Anton({
+export const headerFont = Anton({
   weight: "400",
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-anton",
+  variable: "--font-header",
 });

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Analytics } from "@vercel/analytics/react";
 import cx from "classnames";
 import { Locale, i18n } from "@/i18n-config";
-import { futuraFont, antonFont } from "@/fonts";
+import { mainFont, headerFont } from "@/fonts";
 import { getDictionary } from "@/get-dictionary";
 import { getNavigation } from "@/utils";
 import styles from "./layout.module.scss";
@@ -57,7 +57,7 @@ export default async function RootLayout({ children, params }: PropsType) {
   return (
     <html
       lang={params.lang}
-      className={cx(futuraFont.variable, antonFont.variable)}
+      className={cx(mainFont.variable, headerFont.variable)}
     >
       <body>
         <div className={styles.bodyBackground} />
