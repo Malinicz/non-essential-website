@@ -59,29 +59,29 @@
     }
   },
   "resources": {
-    "heading": "Hello! We're N.E.W.",
-    "description": "Thanks for stopping by. We're a synth trio from US/PL and we make electronic music. We're glad you're here. If you want to know more about us, check out the links below.",
-    "compressed": "compressed zip",
-    "censored": "censored",
+    "heading": "Cześć! Jesteśmy N.E.W.",
+    "description": "Dzięki za zajrzenie na tę stronę. Jesteśmy międzynarodowym (US/UK/PL) kolektywem wykonującym muzykę elektroniczną. Jeśli chcesz się dowiedzieć o nas czegoś więcej, zachęcamy ze przejrzenia zawartości tej strony internetowej. Poniżej znajdują się linki do naszej muzyki, zdjęć oraz wideo. ",
+    "compressed": "skompresowany zip",
+    "censored": "ocenzurowany",
     "music": {
-      "heading": "Music",
-      "description": "We store our files on Google Drive. In case it says it cannot scan the file for viruses because it's too large, just click 'download anyways' button - it's safe :)",
-      "albumCover": "album cover"
+      "heading": "Muzyka",
+      "description": "Nasze pliki trzymamy na Google Drive. Jeśli przy próbie ściągnięcia wyświetli się komunikat dotyczący nieudanej próby przeskanowania zawartości, kliknij 'download anyways' - w naszych plikach nie ma wirusów :)",
+      "albumCover": "okładka albumu"
     },
     "bio": {
-      "heading": "Short bio",
+      "heading": "Krótkie bio",
       "paragraphs": {
-        "paragraph1": "We are Non-Essential Workers (N.E.W.), a Central European synth trio and international production collective (US/UK/PL) whose mission is to synthesize the sights, sounds, events and emotions of our present tense and transform it into sonic art for the masses.",
-        "paragraph2": "We found our calling and took up our vocation in the earliest days of the pandemic and only now we are finally emerging from our self-imposed synth cave to share our synthesized soundscapes with the masses on stages and at discos, canteens, in factories, and speakeasies across Europe."
+        "paragraph1": "Non-Essential Workers (NEW) to środkowoeuropejskie trio syntezatorowe i zarazem międzynarodowy kolektyw produkcyjny (USA/UK/PL), którego misją jest mariaż obrazów z dźwiękami, wydarzeń z emocjami w czasie rzeczywistym i przekształcanie go w sztukę dźwiękową dla wszystkich.",
+        "paragraph2": "Nie jesteśmy pracownikami niezbędnymi, ale wypalenie zawodowe nam nie grozi - dopiero się rozkręcamy…"
       }
     },
     "photos": {
-      "heading": "Photos",
-      "pressPack": "Photos press pack (zip)"
+      "heading": "Zdjęcia",
+      "pressPack": "Zdjęcia dla prasy (zip)"
     },
     "videos": {
-      "heading": "Videos",
-      "youTubeChannel": "N.E.W. YouTube channel"
+      "heading": "Wideo",
+      "youTubeChannel": "Kanał YouTube N.E.W."
     },
     "socialMedia": {
       "heading": "Social media"
