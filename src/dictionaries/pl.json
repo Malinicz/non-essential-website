@@ -1,61 +1,61 @@
 {
   "newsletter": {
     "title": "N.E.W.S.LETTER",
-    "titleSuccess": "Thank you, it means the world to us!",
-    "description": "Support us by subscribing to our N.E.W.S.letter to receive exclusive content, art lyric books, behind the scenes photos, secret shows and exclusive music releases.",
-    "descriptionSuccess": "We'll get back to you soon with some exclusive content from our debut EP - First Shift.",
+    "titleSuccess": "Dziękujemy!",
+    "description": "Wspomóż nas, subskrybując N.E.W.S.LETTER, a w zamian otrzymasz ekskluzywne treści: książeczki z tekstami utworów, zdjęcia zza kulis, zaproszenia na 'tajne' występy i kolekcjonerskie wydawnictwa muzyczne!",
+    "descriptionSuccess": "Wkrótce skontaktujemy się z Tobą w celu przekazania specjalnej zawartości z naszej debiutanckiej EP-ki First Shift.",
     "form": {
       "emailLabel": "email",
-      "emailPlaceholder": "youremail@gmail.com",
-      "emailFormattingErrorText": "Something's off with your email address, please check it again.",
-      "emailAlreadySubscribedErrorText": "You're already subscribed to our newsletter. Thanks!",
-      "emailGenericErrorText": "Something went wrong, please try again later or drop us a message at nonessentialworkers@gmail.com",
-      "submitButton": "Sign up",
-      "checkboxLabel": "I agree to receive newsletters and acknowledge that I have read and agree to the [html]Privacy Policy[html]."
+      "emailPlaceholder": "twojemail@gmail.com",
+      "emailFormattingErrorText": "Coś jest nie tak z Twoim adresem e-mail, sprawdź go proszę ponownie.",
+      "emailAlreadySubscribedErrorText": "Jesteś już zapisany do naszego newslettera. Dzięki!",
+      "emailGenericErrorText": "Coś poszło nie tak, spróbuj ponownie później lub wyślij nam wiadomość na adres: nonessentialworkers@gmail.com",
+      "submitButton": "Zapisz się",
+      "checkboxLabel": "Wyrażam zgodę na otrzymywanie newsletterów i potwierdzam, że zapoznałem się z [html]Polityką Prywatności[html]."
     }
   },
   "home": {
-    "heading": "N.E.W. IMPOSSIBLE SINGLE FROM OUR DEBUT EP FIRST SHIFT!",
-    "streamingServicesTitle": "HEY, LISTEN UP...",
-    "streamingServicesDescription": "… N.E.W. Music is available on your favorite platforms.",
-    "newsletterTitle": "BUT DON'T JUST STREAM A LITTLE STREAM…"
+    "heading": "Pierwszy singiel Impossible z debiutanckiej EP-ki First Shift już dostępny!",
+    "streamingServicesTitle": "Hej, posłuchaj...",
+    "streamingServicesDescription": "...nasza muzyka jest dostępna na wszystkich najważniejszych platformach streamingowych.",
+    "newsletterTitle": "N.E.W.S.letter"
   },
   "bio": {
     "heading": "bio",
     "section1": {
-      "heading": "What is N.E.W.?",
-      "photoAltText": "Mirror reflection of the sea waves crashing against the rocks.",
+      "heading": "Czym jest N.E.W.?",
+      "photoAltText": "Lustrzane odbicie fal morskich roztrzaskujących się o fale.",
       "paragraphs": {
-        "paragraph1": "The synthesized sound of our present tense."
+        "paragraph1": "Syntetyzowanym dźwiękiem naszej rzeczywistości."
       }
     },
     "section2": {
-      "heading": "Why are we N.E.W.?",
+      "heading": "Dlaczego jesteśmy N.E.W.?",
       "paragraphs": {
-        "paragraph1": "We are Non-Essential Workers (N.E.W.), a Central European synth trio and international production collective (US/UK/PL) whose mission is to synthesize the sights, sounds, events and emotions of our present tense and transform it into sonic art for the masses.",
-        "paragraph2": "We found our calling and took up our vocation in the earliest days of the pandemic. As the darkness washed over us, our collective values, priorities and understanding of what is truly essential came sharply into focus:",
-        "paragraph3": "Health is Essential.[html]Rights are Essential.[html]Work is Essential. [html]Art is Essential.[html]Music is Essential.",
-        "paragraph4": "With these guiding principles in place, we have continued to experiment with sound and space at an ever increasing pace. Now, we are finally emerging from our self-imposed synth cave to share our synthesized soundscapes with the masses on stages and at discos, canteens, in factories, and speakeasies across Europe.",
-        "paragraph5": "We are Non-Essential Workers, and it's time to get to work…",
-        "paragraph6": "Worker1: Guitars, Beats, Production [html]Worker2: Synth Bass, Beats, Synthesis [html]Worker3: Vocals, Lyrics, Synths"
+        "paragraph1": "Non-Essential Workers (NEW) to środkowoeuropejskie trio syntezatorowe i zarazem międzynarodowy kolektyw produkcyjny (USA/UK/PL), którego misją jest mariaż obrazów z dźwiękami, wydarzeń z emocjami w czasie rzeczywistym i przekształcanie go w sztukę dźwiękową dla wszystkich.",
+        "paragraph2": "Gdy zapadła nad nami ciemność, jasne stały się dla nas wspólne wartości, priorytety, rzeczy szczególnie istotne:",
+        "paragraph3": "Zdrowie jest istotne.[html]Prawa są istotne.[html]Praca jest istotna.[html]Sztuka jest istotna.[html]Muzyka jest istotna.",
+        "paragraph4": "Kierując się tymi podstawowymi zasadami, w coraz szybszym tempie kontynuujemy eksperymenty z dźwiękiem i przestrzenią. Jesteśmy gotowi wyjść z dotychczasowej jaskini syntezatorów na otwartą przestrzeń, przenieść nasze muzyczne krajobrazy na sceny, do dyskotek, stołówek, fabryk i barów w całej Europie.",
+        "paragraph5": "Nie jesteśmy pracownikami niezbędnymi, ale wypalenie zawodowe nam nie grozi - dopiero się rozkręcamy!",
+        "paragraph6": "Pracownik1: Gitary, Bity, Produkcja [html]Pracownik2: Syntezatory, Bity [html]Pracownik3: Wokale, Teksty, Syntezatory"
       }
     }
   },
   "music": {
-    "heading": "music",
-    "streamingServicesDescription": "Our music is available on all major streaming platforms:",
+    "heading": "muzyka",
+    "streamingServicesDescription": "Nasza muzyka jest dostępna na wszystkich najważniejszych platformach streamingowych:",
     "singles": {
-      "heading": "singles"
+      "heading": "single"
     }
   },
   "videos": {
-    "heading": "videos",
-    "description": "If you enjoyed the video, please consider subscribing to our YouTube channel and following us on social media. We appreciate your support!"
+    "heading": "wideo",
+    "description": "Jeśli spodobał Ci się film, rozważ subskrypcję naszego kanału na YouTubie i śledzenie nas w mediach społecznościowych. Dzięki za wsparcie!"
   },
   "contact": {
-    "heading": "contact",
+    "heading": "kontakt",
     "paragraphs": {
-      "paragraph1": "We'd love to hear from you. Drop us a message if you want to share your thoughts about our music, or maybe you would like us to play a concert in your city. Let us know!"
+      "paragraph1": "Chętnie poznamy Twoją opinię. Napisz do nas, jeśli chcesz się podzielić swoimi przemyśleniami na temat naszej muzyki. A może chciałbyś, żebyśmy zagrali koncert w Twoim mieście? Daj nam znać!"
     }
   },
   "resources": {
@@ -88,50 +88,50 @@
     }
   },
   "navigation": {
-    "home": "home",
+    "home": "start",
     "bio": "bio",
-    "music": "music",
-    "videos": "videos",
-    "contact": "contact"
+    "music": "muzyka",
+    "videos": "wideo",
+    "contact": "kontakt"
   },
   "privacyPolicy": {
-    "title": "Privacy Policy",
-    "lastUpdated": "Last updated",
-    "description": "This page informs you of our policies regarding the collection, use, and disclosure of information we receive from users of the Site.",
+    "title": "Polityka Prywatności",
+    "lastUpdated": "Ostatnia aktualizacja",
+    "description": "Non-Essential Workers ('my', 'nas' lub 'nasza') obsługuje nonessentialworkers.com („Strona”). Niniejsza strona informuje Cię o naszych zasadach dotyczących zbierania, używania i udostępniania informacji, które otrzymujemy od użytkowników Strony.",
     "sections": [
       {
-        "title": "Information Collection and Use",
-        "description": "While using our Site, we may collect non-personal information that does not directly identify you. This may include Log Data, such as your computer's Internet Protocol ('IP') address, browser type, browser version, the pages of our Site that you visit, the time and date of your visit, the time spent on those pages, and other statistics. We utilize this information for the sole purpose of improving and enhancing our website's performance and user experience."
+        "title": "Zbieranie i Używanie Informacji",
+        "description": "Podczas korzystania z naszej Strony możemy gromadzić informacje nieosobiste, które nie identyfikują Cię bezpośrednio. Mogą to być dane logowania (Log Data), takie jak adres Protokołu Internetowego ('IP') twojego komputera, rodzaj przeglądarki, wersja przeglądarki, strony naszej Strony, które odwiedzasz, czas i data Twojej wizyty, czas spędzony na tych stronach i inne statystyki. Wykorzystujemy te informacje wyłącznie w celu poprawy wydajności naszej witryny i doświadczenia użytkownika."
       },
       {
-        "title": "Cookies",
-        "description": "We use 'cookies' to collect information and enhance your experience on the Site. Cookies are files with small amounts of data that are sent to your browser from a web site and stored on your computer's hard drive. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Site."
+        "title": "Ciasteczka (Cookies)",
+        "description": "Używamy 'ciasteczek' (cookies), aby zbierać informacje i poprawić Twoje doświadczenia na Stronie. Ciasteczka to pliki z małymi ilościami danych, które są wysyłane do Twojej przeglądarki z witryny internetowej i przechowywane na twardym dysku Twojego komputera. Możesz skonfigurować swoją przeglądarkę tak, aby odmówiła wszystkich ciasteczek lub zasygnalizowała, gdy ciasteczko jest wysyłane. Jednakże, jeśli nie akceptujesz ciasteczek, możliwe, że nie będziesz mógł korzystać z niektórych części naszej Strony."
       },
       {
-        "title": "Analytics",
-        "description": "We employ third-party analytics services (such as Google Analytics) to collect, monitor, and analyze aggregated data. These services may use cookies to help us understand how users interact with our Site. The information generated by the cookie about your use of the Site (including your IP address) will be transmitted to and stored by the third-party analytics providers. This information is utilized to evaluate website activity, compile reports on website activity for website operators, and provide other services related to website activity and internet usage."
+        "title": "Analizy",
+        "description": "Korzystamy z usług zewnętrznych dostawców analiz (takich jak Google Analytics), aby zbierać, monitorować i analizować zgromadzone dane. Te usługi mogą korzystać z ciasteczek w celu pomocy nam zrozumieć, w jaki sposób użytkownicy wchodzą w interakcje z naszą Stroną. Informacje generowane przez ciasteczko dotyczące korzystania z Strony (w tym Twój adres IP) zostaną przekazane i przechowywane przez dostawców analiz zewnętrznych. Te informacje są wykorzystywane do oceny aktywności na stronie, tworzenia raportów na temat aktywności na stronie dla operatorów strony oraz świadczenia innych usług związanych z aktywnością na stronie i korzystaniem z internetu."
       },
       {
-        "title": "Communications",
-        "description": "We do not collect personal information, such as emails or names, without your explicit action and consent. Any communication you receive from us will be related to the services provided by our Site, and you may opt-out of receiving any such communications by following the unsubscribe link or instructions provided."
+        "title": "Komunikacja",
+        "description": "Nie zbieramy informacji osobistych, takich jak adresy e-mail czy imiona, bez Twojej wyraźnej akcji i zgody. Wszelka komunikacja, którą otrzymasz od nas, będzie związana z usługami świadczonymi przez naszą Stronę, a możesz zrezygnować z otrzymywania takich komunikatów, postępując zgodnie z linkiem do rezygnacji lub instrukcjami podanymi w wiadomości e-mail."
       },
       {
-        "title": "Security",
-        "description": "The security of your non-personal information is important to us. While we strive to use commercially acceptable means to protect your data, it's important to note that no method of transmission over the Internet or method of electronic storage is 100% secure."
+        "title": "Bezpieczeństwo",
+        "description": "Bezpieczeństwo Twoich nieosobistych informacji jest dla nas ważne. Mimo że staramy się używać komercyjnie akceptowalnych środków ochrony Twoich danych, ważne jest zauważenie, że żaden sposób przesyłania danych przez internet ani żadne przechowywanie elektroniczne nie jest w 100% bezpieczne."
       },
       {
-        "title": "Changes to This Privacy Policy",
-        "description": "This Privacy Policy is effective as of [Date] and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page. We reserve the right to update or change our Privacy Policy at any time, and you should check this Privacy Policy periodically. If we make any material changes to this Privacy Policy, we will notify you either through the email address you have provided us (if applicable) or by placing a prominent notice on our website."
+        "title": "Zmiany w Polityce Prywatności",
+        "description": "Niniejsza Polityka Prywatności obowiązuje od 06.01.2024 i pozostanie w mocy, z wyjątkiem zmian w jej postanowieniach w przyszłości, które będą obowiązywać natychmiast po opublikowaniu ich na tej stronie. Zastrzegamy sobie prawo do aktualizacji lub zmiany naszej Polityki Prywatności w dowolnym momencie, dlatego sprawdzaj ją regularnie. W przypadku dokonania istotnych zmian w tej Polityce Prywatności poinformujemy Cię, zarówno poprzez adres e-mail, który nam podałeś (jeśli dotyczy), jak i przez umieszczenie wyraźnego powiadomienia na naszej stronie internetowej."
       },
       {
-        "title": "Contact Us",
-        "description": "If you have any questions about this Privacy Policy, please contact us at nonessentialworkers@gmail.com."
+        "title": "Kontakt",
+        "description": "Jeśli masz jakiekolwiek pytania dotyczące tej Polityki Prywatności, skontaktuj się z nami pod adresem nonessentialworkers@gmail.com."
       }
     ]
   },
-  "cookieConsentText": "We use cookies to enhance your experience on our website. By continuing to use our site, you agree to our use of cookies. For more information, please read our [html]Privacy Policy[html].",
+  "cookieConsentText": "Używamy plików cookie, aby poprawić komfort korzystania z naszej witryny. Kontynuując korzystanie z niej, wyrażasz zgodę na używanie przez nas plików cookie. Aby uzyskać więcej informacji, przeczytaj naszą [html]Politykę Prywatności[html].",
   "player": {
-    "loading": "buffering"
+    "loading": "ładowanie..."
   },
   "copyButton": {
     "buttonLabel": "Kopiuj",
@@ -142,7 +142,7 @@
     "websiteDescription": "Non-Essential Workers - oficjalna strona zespołu",
     "openGraph": {
       "title": "Non-Essential Workers",
-      "description": "The synthesized sound of our present tense."
+      "description": "Syntetyzowany dźwięk naszej rzeczywistości."
     }
   },
   "expandableList": {
