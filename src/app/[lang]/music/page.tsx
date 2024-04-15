@@ -21,6 +21,12 @@ export default async function Page({
       </section>
 
       <section className="gap-y-s">
+        <h2>{dictionary.music.albums.heading}</h2>
+        <div className={cx(styles.bandCampPluginSmall, "gap-y-s")}>
+          {["firstShift" as const].map((name) => (
+            <BandCampPlugin key={name} album={name} size="small" />
+          ))}
+        </div>
         <h2>{dictionary.music.singles.heading}</h2>
         <div className={cx(styles.bandCampPluginSmall, "gap-y-s")}>
           {["impossible" as const, "fire" as const, "people" as const].map(

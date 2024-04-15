@@ -15,7 +15,7 @@
     }
   },
   "home": {
-    "heading": "Impossible z debiutanckiej EP-ki  First Shift już dostępny!",
+    "heading": "Debiutancka EP 'First Shift' już dostępna!",
     "streamingServicesTitle": "Hej, posłuchaj...",
     "streamingServicesDescription": "...nasza muzyka jest dostępna na wszystkich najważniejszych platformach streamingowych.",
     "newsletterTitle": "N.E.W.S.letter"
@@ -46,6 +46,9 @@
     "streamingServicesDescription": "Nasza muzyka jest dostępna na wszystkich najważniejszych platformach streamingowych:",
     "singles": {
       "heading": "single"
+    },
+    "albums": {
+      "heading": "albumy"
     }
   },
   "videos": {

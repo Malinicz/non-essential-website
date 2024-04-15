@@ -15,7 +15,7 @@
     }
   },
   "home": {
-    "heading": "N.E.W. IMPOSSIBLE SINGLE FROM OUR DEBUT EP FIRST SHIFT!",
+    "heading": "N.E.W. DEBUT EP “FIRST SHIFT” OUT NOW & STREAMING FREELY!",
     "streamingServicesTitle": "HEY, LISTEN UP...",
     "streamingServicesDescription": "...N.E.W. Music is available on your favorite platforms.",
     "newsletterTitle": "BUT DON'T JUST STREAM A LITTLE STREAM..."
@@ -46,6 +46,9 @@
     "streamingServicesDescription": "Our music is available on all major streaming platforms:",
     "singles": {
       "heading": "singles"
+    },
+    "albums": {
+      "heading": "albums"
     }
   },
   "videos": {

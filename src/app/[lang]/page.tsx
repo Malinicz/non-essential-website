@@ -41,7 +41,7 @@ export default async function Page({
         </section>
       </div>
       <div className={styles.column2}>
-        <BandCampPlugin album="impossible" size="large" />
+        <BandCampPlugin album="firstShift" size="large" multipleSongs />
       </div>
     </div>
   );
