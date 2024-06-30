@@ -108,7 +108,7 @@ export function getAssetsUrls(): GetAssetsUrlsOutputType {
       },
     },
     photos: {
-      pressPack: getGoogleDriveDownloadUrl("1NWt-Q-KX2WeCFTPSdW8ST3_GZF7gXL7C"),
+      pressPack: getGoogleDriveDownloadUrl("1RYdEm8UsDEG-dSA48S-hmnkKL-bdHIe1"),
     },
   };
 }
