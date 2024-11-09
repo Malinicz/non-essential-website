@@ -19,11 +19,14 @@ export default async function Page({
         <p>{dictionary.videos.description}</p>
       </section>
       <section className="gap-y-l">
-        {["impossible" as const, "fire" as const, "people" as const].map(
-          (song) => (
-            <YouTubePlugin key={song} song={song} />
-          )
-        )}
+        {[
+          "liveStudioCentrum" as const,
+          "impossible" as const,
+          "fire" as const,
+          "people" as const,
+        ].map((song) => (
+          <YouTubePlugin key={song} song={song} />
+        ))}
       </section>
     </div>
   );
