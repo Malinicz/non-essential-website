@@ -11,19 +11,19 @@ type PropsType = {
     showLess: string;
   };
 };
+
 export function ExpandableText({ text, copy }: PropsType) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div>
-      <div
-        className={cx(styles.container, {
-          [styles.collapsed]: !isExpanded,
-          [styles.expanded]: isExpanded,
+    <div className={cx(styles.container, "gap-y-s")}>
+      <p
+        className={cx("preserve-line-breaks", styles.text, {
+          [styles.truncated]: !isExpanded,
         })}
       >
-        <p className={cx("preserve-line-breaks", styles.text)}>{text}</p>
-      </div>
+        {text}
+      </p>
       <button
         className={styles.buttonLink}
         onClick={() => setIsExpanded(!isExpanded)}
