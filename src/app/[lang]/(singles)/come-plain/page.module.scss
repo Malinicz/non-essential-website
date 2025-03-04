@@ -27,6 +27,12 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 24px;
+  margin-bottom: 48px;
+
+  @media (max-width: $md-breakpoint) {
+    flex-direction: column-reverse;
+    margin-bottom: 0;
+  }
 }
 
 .left {
@@ -63,4 +69,46 @@
   height: auto;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+}
+
+.homePageContainer {
+  @media (max-width: $md-breakpoint) {
+    display: flex;
+    margin: -24px -24px 16px -24px;
+    padding: 8px;
+    background: $black;
+    width: calc(100% + 48px);
+  }
+}
+
+.homePageLink {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+
+  &:hover {
+    background: none;
+  }
+
+  @media (max-width: $md-breakpoint) {
+    color: $cream;
+  }
+}
+
+.homePageLinkIconForward {
+  margin-left: 4px;
+
+  @media (max-width: $md-breakpoint) {
+    display: none;
+  }
+}
+
+.homePageLinkIconBack {
+  margin-right: 8px;
+
+  @media (min-width: $md-breakpoint) {
+    display: none;
+  }
 }

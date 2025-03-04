@@ -1,6 +1,11 @@
 import Image from "next/image";
 import cx from "classnames";
-import { IoImageOutline, IoMusicalNotesOutline } from "react-icons/io5";
+import {
+  IoImageOutline,
+  IoMusicalNotesOutline,
+  IoArrowForward,
+  IoArrowBack,
+} from "react-icons/io5";
 import { Locale } from "@/i18n-config";
 import { getDictionary } from "@/get-dictionary";
 import { getAssetsUrls, getNavigation } from "@/utils";
@@ -8,6 +13,7 @@ import albumCover from "./come-plain-cover.jpg";
 import styles from "./page.module.scss";
 import { ExpandableText } from "../../_components";
 import { Viewport } from "next";
+import Link from "next/link";
 
 export const viewport: Viewport = {
   themeColor: "black",
@@ -29,6 +35,13 @@ export default async function ComePlainPage({ params }: PropsType) {
           <div>
             <h1>{dictionary.singles.comePlain.title}</h1>
             <p>{dictionary.singles.comePlain.description}</p>
+          </div>
+          <div className={styles.homePageContainer}>
+            <Link href={navigation.home.url} className={styles.homePageLink}>
+              <IoArrowBack className={styles.homePageLinkIconBack} />
+              {dictionary.singles.homePageLink}
+              <IoArrowForward className={styles.homePageLinkIconForward} />
+            </Link>
           </div>
         </div>
         <div className={styles.left}>
