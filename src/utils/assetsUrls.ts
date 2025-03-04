@@ -106,6 +106,18 @@ export function getAssetsUrls(): GetAssetsUrlsOutputType {
           "1LDFEMocV2IiUa2m0zjg8Cq89bXAm6f0c"
         ),
       },
+      comePlain: {
+        type: "single",
+        name: "Come Plain",
+        wav: getGoogleDriveDownloadUrl("1zSDoKT62S7EVD07H5VeJsxfPHumVPlpU"),
+        wav24bit: getGoogleDriveDownloadUrl(
+          "1ZtM2m51wM6_37bE4cTjHuSuQZy3qarGk"
+        ),
+        mp3: getGoogleDriveDownloadUrl("16Fcmi8t9lDhH3Fb0jIhqQ7Dg_thAC2E9"),
+        albumCover: getGoogleDriveDownloadUrl(
+          "1TAjEReeVx71glc3pjbgLs2fcr2O_7Q_Z"
+        ),
+      },
     },
     photos: {
       pressPack: getGoogleDriveDownloadUrl("1RYdEm8UsDEG-dSA48S-hmnkKL-bdHIe1"),

@@ -1,0 +1,36 @@
+.container {
+  position: relative;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.collapsed {
+  max-height: 100px;
+}
+
+.expanded {
+  max-height: 2000px;
+}
+
+.gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(transparent, rgba(255, 255, 255, 0.9));
+  pointer-events: none;
+}
+
+.buttonLink {
+  text-decoration: underline;
+  color: $black;
+
+  &:hover {
+    background: $graphite;
+    color: $cream;
+    text-decoration: none;
+    transition: all 0.05s ease-in;
+    border-radius: 2px;
+  }
+}

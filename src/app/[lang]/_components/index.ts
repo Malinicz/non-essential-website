@@ -11,3 +11,4 @@ export * from "./UserForm";
 export * from "./YouTubePlugin";
 export * from "./CopyButton";
 export * from "./ExpandableList";
+export * from "./ExpandableText";

@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-main), Arial, sans-serif;
+}
+
+html,
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.3em;
+  font-family: var(--font-header), Arial, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 4rem;
+  max-width: 750px;
+
+  @media (max-width: $sm-breakpoint) {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 16px;
+  max-width: 650px;
+
+  @media (max-width: $sm-breakpoint) {
+    font-size: 1.5rem;
+  }
+}
+
+p {
+  margin-bottom: 16px;
+  color: $black;
+  max-width: 600px;
+}
+
+a {
+  color: $black;
+
+  &:hover {
+    background: $graphite;
+    color: $cream;
+    text-decoration: none;
+    transition: all 0.05s ease-in;
+    border-radius: 2px;
+  }
+}
+
+section {
+  margin-bottom: 48px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 12px 0;
+}
+
+label {
+  font-size: 12px;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  min-height: 0;
+  transition: transform 0.2s ease;
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation-name: fadeInAnimation;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-out;
+}
+
+@each $name, $size in $spacings {
+  .gap-x-#{$name} > * + * {
+    margin-left: $size;
+  }
+
+  .gap-y-#{$name} > * + * {
+    margin-top: $size;
+  }
+}
+
+.preserve-line-breaks {
+  white-space: pre-line;
+}
