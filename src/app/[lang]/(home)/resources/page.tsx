@@ -13,7 +13,7 @@ import {
 import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
 import { getAssetsUrls, getMusicAssetsList, socialMedia } from "@/utils";
-import { CopyButton, ExpandableList } from "../_components";
+import { CopyButton, ExpandableList } from "../../_components";
 import styles from "./page.module.scss";
 
 export default async function Page({

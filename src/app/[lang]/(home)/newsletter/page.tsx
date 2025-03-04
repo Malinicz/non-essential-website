@@ -1,7 +1,7 @@
 import React from "react";
 import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
-import { Newsletter } from "../_components";
+import { Newsletter } from "../../_components";
 import { getNavigation } from "@/utils";
 
 export default async function Page({

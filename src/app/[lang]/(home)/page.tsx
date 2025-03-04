@@ -4,7 +4,7 @@ import {
   BandCampPlugin,
   StreamingServicesList,
   Newsletter,
-} from "./_components";
+} from "../_components";
 import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
 import { getNavigation } from "@/utils";

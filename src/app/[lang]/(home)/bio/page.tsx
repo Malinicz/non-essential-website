@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Locale } from "@/i18n-config";
 import { getDictionary } from "@/get-dictionary";
 import styles from "./page.module.scss";
-import bioPhotoSrc from "../_assets/bio_photo.jpg";
+import bioPhotoSrc from "../../_assets/bio_photo.jpg";
 
 export default async function Page({
   params: { lang },

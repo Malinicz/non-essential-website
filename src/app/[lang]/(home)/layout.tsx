@@ -16,7 +16,7 @@ import {
   Navigation,
   CookieConsentBanner,
   SocialMediaButtons,
-} from "./_components";
+} from "../_components";
 
 export async function generateMetadata({
   params,

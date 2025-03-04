@@ -2,7 +2,7 @@ import React from "react";
 import cx from "classnames";
 import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
-import { YouTubePlugin } from "../_components";
+import { YouTubePlugin } from "../../_components";
 import styles from "./page.module.scss";
 
 export default async function Page({

@@ -3,7 +3,7 @@ import cx from "classnames";
 import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
 import styles from "./page.module.scss";
-import { CopyButton, Newsletter } from "../_components";
+import { CopyButton, Newsletter } from "../../_components";
 import { getNavigation } from "@/utils";
 import {
   IoLogoFacebook,
