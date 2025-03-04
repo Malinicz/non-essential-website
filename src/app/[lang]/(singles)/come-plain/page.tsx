@@ -7,6 +7,11 @@ import { getAssetsUrls, getNavigation } from "@/utils";
 import albumCover from "./come-plain-cover.jpg";
 import styles from "./page.module.scss";
 import { ExpandableText } from "../../_components";
+import { Viewport } from "next";
+
+export const viewport: Viewport = {
+  themeColor: "black",
+};
 
 type PropsType = {
   params: { lang: Locale };
