@@ -164,7 +164,7 @@
       },
       "about": {
         "title": "About",
-        "description": "Non-Essential Workers unveil their latest single featuring Namena Lala, a poignant exploration of longing and disconnection in relationships. The song's repetitive phrases express hope and disappointment as the narrator reflects on missed connections and the desire for reconnection. With vivid imagery of emotional turmoil, the lyrics also address societal issues, contrasting the care for others—symbolized by saving dolphins—with personal neglect, represented by caging children. This thought-provoking track invites listeners to reflect on the complexities of modern life and relationships."
+        "description": "We are excited to complain about the release of our N.E.W. single Come Plain which is a collaboration between Non-essential Workers and Namena Lala.\n\nThis duet of sorts evokes the idea of having an intimate conversation with an uninvited telemarketer that permanently lives in your head. While complaining is often the go-to defense mechanism for most humans when faced with diversity, perceived inequality or frankly anything – it is utterly pointless when confronting one’s inner voice.\n\nIt’s time to Come Plain, we’re just one and the same. We just fill in the blanks. Would you like to donate to the latest and greatest endless campaign?"
       },
       "lyrics": {
         "title": "Lyrics",
@@ -172,6 +172,36 @@
       },
       "albumCoverAlt": "Come Plain album cover showing a blurred woman."
     },
-    "homePageLink": "Go the the home page"
+    "homePageLink": "Go the the home page",
+    "rating": {
+      "title": "Rate this single",
+      "items": [
+        {
+          "emoji": "😍",
+          "text": "Love it!",
+          "value": 5
+        },
+        {
+          "emoji": "👍",
+          "text": "Really enjoy it!",
+          "value": 4
+        },
+        {
+          "emoji": "🤷",
+          "text": "It's Okay",
+          "value": 3
+        },
+        {
+          "emoji": "😕",
+          "text": "Not my favorite",
+          "value": 2
+        },
+        {
+          "emoji": "😢",
+          "text": "Disappointing",
+          "value": 1
+        }
+      ]
+    }
   }
 }

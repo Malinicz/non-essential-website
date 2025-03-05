@@ -1,11 +1,16 @@
 "use client";
 
-import { useState } from "react";
-import { IoStar, IoStarOutline } from "react-icons/io5";
+import { useState, useEffect } from "react";
+import cx from "classnames";
 import styles from "./Rating.module.scss";
 
 type Props = {
   songId: string;
+  items: Array<{
+    emoji: string;
+    text: string;
+    value: number;
+  }>;
   onRate: ({
     songId,
     rating,
@@ -15,37 +20,46 @@ type Props = {
   }) => Promise<void>;
 };
 
-export const Rating = ({ songId, onRate }: Props) => {
+export const Rating = ({ songId, onRate, items }: Props) => {
   const [rating, setRating] = useState<number>(0);
-  const [hover, setHover] = useState<number>(0);
   const [hasRated, setHasRated] = useState(false);
+  const localStorageKey = `rating-${songId}`;
+
+  useEffect(() => {
+    const storedRating = localStorage.getItem(localStorageKey);
+    if (storedRating) {
+      setRating(Number(storedRating));
+      setHasRated(true);
+    }
+  }, [songId, localStorageKey]);
 
   const handleClick = async (value: number) => {
     if (!hasRated) {
       setRating(value);
       setHasRated(true);
+      localStorage.setItem(localStorageKey, value.toString());
+
       await onRate({ songId, rating: value });
     }
   };
 
   return (
     <div className={styles.container}>
-      {[1, 2, 3, 4, 5].map((star) => (
-        <button
-          key={star}
-          onClick={() => handleClick(star)}
-          onMouseEnter={() => !hasRated && setHover(star)}
-          onMouseLeave={() => !hasRated && setHover(0)}
-          disabled={hasRated}
-        >
-          {star <= (hover || rating) ? (
-            <IoStar size={24} />
-          ) : (
-            <IoStarOutline size={24} />
-          )}
-        </button>
-      ))}
-      {hasRated && <p>Thanks for rating!</p>}
+      <div className={styles.buttonsContainer}>
+        {items.map((item, index) => (
+          <button
+            key={index}
+            className={cx(styles.button, {
+              [styles.ratedButton]: rating === item.value,
+            })}
+            onClick={() => handleClick(item.value)}
+            disabled={rating !== item.value && hasRated}
+          >
+            {item.emoji}
+            <span className={styles.hoverText}>{item.text}</span>
+          </button>
+        ))}
+      </div>
     </div>
   );
 };

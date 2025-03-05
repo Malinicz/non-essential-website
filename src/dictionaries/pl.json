@@ -164,7 +164,7 @@
       },
       "about": {
         "title": "O utworze",
-        "description": "Non-Essential Workers prezentują swój najnowszy singiel z udziałem Namena Lala, który jest poruszającą eksploracją pragnienia i odłączenia w relacjach. Powtarzające się frazy utworu wyrażają nadzieję i rozczarowanie, gdy narrator reflektuje nad utraconymi połączeniami i pragnieniem ponownego nawiązania kontaktu. Z żywą obrazowością emocjonalnego zamieszania, teksty poruszają również kwestie społeczne, kontrastując troskę o innych—symbolizowaną przez ratowanie delfinów—z osobistym zaniedbaniem, reprezentowanym przez zamykanie dzieci. Ten skłaniający do myślenia utwór zaprasza słuchaczy do refleksji nad złożonością współczesnego życia i relacji."
+        "description": "Cieszymy się, że możemy ogłosić wydanie naszego nowego singla 'Come Plain', który jest współpracą między Non-Essential Workers oraz artystką o pseudonimie Namena Lala.\n\nTen duet w pewnym sensie przywołuje ideę intymnej rozmowy z nieproszonym telemarketerem, który na stałe mieszka w twojej głowie. Choć narzekanie jest często pierwszym mechanizmem obronnym dla większości ludzi w obliczu różnorodności, nierówności czy właściwie czegokolwiek – jest całkowicie bezcelowe, gdy stajemy w obliczu własnego wewnętrznego głosu.\n\nCzas na 'Come Plain', jesteśmy po prostu tacy sami. Po prostu wypełniamy luki. Czy chciałbyś wesprzeć najnowszą i najlepszą niekończącą się kampanię?"
       },
       "lyrics": {
         "title": "Tekst",
@@ -172,6 +172,36 @@
       },
       "albumCoverAlt": "Okładka singla Come Plain przedstawiająca rozmazaną postać kobiety"
     },
-    "homePageLink": "Idź do strony głównej"
+    "homePageLink": "Idź do strony głównej",
+    "rating": {
+      "title": "Oceń ten singiel",
+      "items": [
+        {
+          "emoji": "😍",
+          "text": "Sztos!",
+          "value": 5
+        },
+        {
+          "emoji": "👍",
+          "text": "Bardzo mi się podoba",
+          "value": 4
+        },
+        {
+          "emoji": "🤷",
+          "text": "Jest OK",
+          "value": 3
+        },
+        {
+          "emoji": "😕",
+          "text": "Meh",
+          "value": 2
+        },
+        {
+          "emoji": "😢",
+          "text": "Słabe",
+          "value": 1
+        }
+      ]
+    }
   }
 }

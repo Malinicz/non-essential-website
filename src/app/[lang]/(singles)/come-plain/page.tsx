@@ -83,12 +83,18 @@ export default async function ComePlainPage({ params }: PropsType) {
           </section>
           <section>
             <h2>{dictionary.singles.comePlain.about.title}</h2>
-            <p>{dictionary.singles.comePlain.about.description}</p>
+            <p className="preserve-line-breaks">
+              {dictionary.singles.comePlain.about.description}
+            </p>
           </section>
           <div>
             <section>
-              <h2>Rate this track</h2>
-              <Rating songId="come-plain" onRate={rateTrack} />
+              <h2>{dictionary.singles.rating.title}</h2>
+              <Rating
+                songId="come-plain"
+                onRate={rateTrack}
+                items={dictionary.singles.rating.items}
+              />
             </section>
           </div>
           <section>
