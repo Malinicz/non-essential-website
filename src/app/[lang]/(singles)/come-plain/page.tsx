@@ -14,6 +14,7 @@ import styles from "./page.module.scss";
 import { ExpandableText } from "../../_components";
 import { Viewport } from "next";
 import Link from "next/link";
+import { Rating } from "../../_components/Rating/Rating";
 
 export const viewport: Viewport = {
   themeColor: "black",
@@ -27,6 +28,27 @@ export default async function ComePlainPage({ params }: PropsType) {
   const dictionary = await getDictionary(params.lang);
   const navigation = getNavigation({ locale: params.lang });
   const item = getAssetsUrls().music.comePlain;
+
+  async function rateTrack({
+    songId,
+    rating,
+  }: {
+    songId: string;
+    rating: number;
+  }) {
+    "use server";
+
+    await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/rate`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        songId,
+        rating,
+      }),
+    });
+  }
 
   return (
     <div className={styles.container}>
@@ -62,6 +84,12 @@ export default async function ComePlainPage({ params }: PropsType) {
             <h2>{dictionary.singles.comePlain.about.title}</h2>
             <p>{dictionary.singles.comePlain.about.description}</p>
           </section>
+          <div>
+            <section>
+              <h2>Rate this track</h2>
+              <Rating songId="come-plain" onRate={rateTrack} />
+            </section>
+          </div>
           <section>
             <h2>{dictionary.singles.comePlain.download.title}</h2>
 
