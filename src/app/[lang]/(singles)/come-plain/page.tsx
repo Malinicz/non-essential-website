@@ -14,6 +14,7 @@ import styles from "./page.module.scss";
 import { ExpandableText } from "../../_components";
 import { Viewport } from "next";
 import Link from "next/link";
+import fetch from "node-fetch";
 import { Rating } from "../../_components/Rating/Rating";
 
 export const viewport: Viewport = {
