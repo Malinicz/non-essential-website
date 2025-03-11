@@ -87,16 +87,24 @@ export default async function ComePlainPage({ params }: PropsType) {
               {dictionary.singles.comePlain.about.description}
             </p>
           </section>
-          <div>
-            <section>
-              <h2>{dictionary.singles.rating.title}</h2>
-              <Rating
-                songId="come-plain"
-                onRate={rateTrack}
-                items={dictionary.singles.rating.items}
-              />
-            </section>
-          </div>
+          <section>
+            <h2>{dictionary.singles.comePlain.preSave.title}</h2>
+            <p>{dictionary.singles.comePlain.preSave.description}</p>
+            <a
+              href={dictionary.singles.comePlain.preSave.preSaveUrl}
+              target="blank"
+            >
+              {dictionary.singles.comePlain.preSave.preSaveLabel}
+            </a>
+          </section>
+          <section>
+            <h2>{dictionary.singles.rating.title}</h2>
+            <Rating
+              songId="come-plain"
+              onRate={rateTrack}
+              items={dictionary.singles.rating.items}
+            />
+          </section>
           <section>
             <h2>{dictionary.singles.comePlain.download.title}</h2>
 

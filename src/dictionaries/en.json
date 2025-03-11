@@ -159,6 +159,12 @@
       "listen": {
         "title": "Listen"
       },
+      "preSave": {
+        "title": "Pre-save",
+        "description": "Pre-save our new single on Spotify and Apple Music.",
+        "preSaveLabel": "Click here to pre-save",
+        "preSaveUrl": "https://distrokid.com/hyperfollow/nonessentialworkersnew/come-plain-feat-namena-lala"
+      },
       "download": {
         "title": "Download"
       },

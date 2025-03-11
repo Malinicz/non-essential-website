@@ -159,6 +159,12 @@
       "listen": {
         "title": "Posłuchaj"
       },
+      "preSave": {
+        "title": "Pre-save",
+        "description": "Zapisz się, aby dostać powiadomienie o 'Come Plain' w dniu premiery na Spotify i Apple Music.",
+        "preSaveLabel": "Kliknij tutaj aby zrobić pre-save",
+        "preSaveUrl": "https://distrokid.com/hyperfollow/nonessentialworkersnew/come-plain-feat-namena-lala"
+      },
       "download": {
         "title": "Ściągnij"
       },
