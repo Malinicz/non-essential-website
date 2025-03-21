@@ -55,11 +55,14 @@
   "liveShows": {
     "heading": "Nadchodzące koncerty",
     "getTicketsCTA": "Kup bilety",
+    "noUpcomingShows": "Brak nadchodzących koncertów.",
     "upcomingShows": [
       {
         "id": "hevre",
         "date": "04 Marca 2025",
         "venue": "Hevre",
+        "coordinates": "https://maps.app.goo.gl/ZPw97rQY58v6ngcc8",
+        "street": "Meiselsa 18",
         "city": "Kraków",
         "country": "Polska",
         "ticketsUrl": "https://form.jotform.com/KrakowMusic/NEW-concert?fbclid=IwZXh0bgNhZW0CMTEAAR0V75TA5DUHFebDif7KFyxEDpohH9BrxB647fEXlLqScEkSQdpUgY4BFWQ_aem_gec5o_kLdSCMAQG_DiAhjw"

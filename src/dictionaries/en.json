@@ -16,7 +16,7 @@
   },
   "home": {
     "heading": "N.E.W. DEBUT EP “FIRST SHIFT” OUT NOW & STREAMING FREELY!",
-    "upcomingShowTitle": "Upcoming show",
+    "upcomingShowTitle": "Upcoming shows",
     "streamingServicesTitle": "LISTEN UP...",
     "streamingServicesDescription": "...N.E.W. Music is available on your favorite platforms.",
     "newsletterTitle": "BUT DON'T JUST STREAM A LITTLE STREAM..."
@@ -55,11 +55,14 @@
   "liveShows": {
     "heading": "Upcoming shows",
     "getTicketsCTA": "Get tickets",
+    "noUpcomingShows": "No upcoming shows at the moment.",
     "upcomingShows": [
       {
         "id": "hevre",
-        "date": "04 April 2025",
+        "date": "2025-04-04T20:00:00+02:00",
         "venue": "Hevre",
+        "coordinates": "https://maps.app.goo.gl/ZPw97rQY58v6ngcc8",
+        "street": "Meiselsa 18",
         "city": "Cracow",
         "country": "Poland",
         "ticketsUrl": "https://form.jotform.com/KrakowMusic/NEW-concert?fbclid=IwZXh0bgNhZW0CMTEAAR0V75TA5DUHFebDif7KFyxEDpohH9BrxB647fEXlLqScEkSQdpUgY4BFWQ_aem_gec5o_kLdSCMAQG_DiAhjw"

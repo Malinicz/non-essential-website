@@ -8,6 +8,7 @@ import {
 import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
 import { getNavigation } from "@/utils";
+import { formatDate, isDateInThePast } from "@/utils/dateUtils";
 
 export default async function Page({
   params: { lang },
@@ -22,7 +23,9 @@ export default async function Page({
     title: dictionary.home.newsletterTitle,
   };
 
-  const upcomingShow = dictionary.liveShows.upcomingShows[0];
+  const hasUpcomingShows = dictionary.liveShows.upcomingShows.some(
+    (show) => isDateInThePast(show.date) === false
+  );
 
   return (
     <div className={styles.mainLayout}>
@@ -30,16 +33,25 @@ export default async function Page({
         <h1>{dictionary.home.heading}</h1>
       </div>
       <div className={styles.column1}>
-        <section>
-          <h2>{dictionary.home.upcomingShowTitle}</h2>
-          <p>
-            {upcomingShow.date} {upcomingShow.venue}, {upcomingShow.city},{" "}
-            {upcomingShow.country} |{" "}
-            <a href={upcomingShow.ticketsUrl} target="_blank">
-              {dictionary.liveShows.getTicketsCTA}
-            </a>
-          </p>
-        </section>
+        {hasUpcomingShows && (
+          <section>
+            <h2>{dictionary.home.upcomingShowTitle}</h2>
+            <ul>
+              {dictionary.liveShows.upcomingShows.map((show) => (
+                <li key={show.id}>
+                  {formatDate(show.date)}{" "}
+                  <a href={show.coordinates} target="_blank">
+                    {show.venue}
+                  </a>
+                  , {show.street}, {show.city}, {show.country} |{" "}
+                  <a href={show.ticketsUrl} target="_blank">
+                    {dictionary.liveShows.getTicketsCTA}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
         <section>
           <h2>{dictionary.home.streamingServicesTitle}</h2>
           <p>{dictionary.home.streamingServicesDescription}</p>
