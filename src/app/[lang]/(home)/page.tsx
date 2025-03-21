@@ -22,12 +22,24 @@ export default async function Page({
     title: dictionary.home.newsletterTitle,
   };
 
+  const upcomingShow = dictionary.liveShows.upcomingShows[0];
+
   return (
     <div className={styles.mainLayout}>
       <div className={styles.heading}>
         <h1>{dictionary.home.heading}</h1>
       </div>
       <div className={styles.column1}>
+        <section>
+          <h2>{dictionary.home.upcomingShowTitle}</h2>
+          <p>
+            {upcomingShow.date} {upcomingShow.venue}, {upcomingShow.city},{" "}
+            {upcomingShow.country} |{" "}
+            <a href={upcomingShow.ticketsUrl} target="_blank">
+              {dictionary.liveShows.getTicketsCTA}
+            </a>
+          </p>
+        </section>
         <section>
           <h2>{dictionary.home.streamingServicesTitle}</h2>
           <p>{dictionary.home.streamingServicesDescription}</p>

@@ -16,7 +16,8 @@
   },
   "home": {
     "heading": "Debiutancka EP 'First Shift' już dostępna!",
-    "streamingServicesTitle": "Hej, posłuchaj...",
+    "upcomingShowTitle": "Nadchodzący koncert",
+    "streamingServicesTitle": "Posłuchaj...",
     "streamingServicesDescription": "...nasza muzyka jest dostępna na wszystkich najważniejszych platformach streamingowych.",
     "newsletterTitle": "N.E.W.S.letter"
   },
@@ -50,6 +51,20 @@
     "albums": {
       "heading": "albumy"
     }
+  },
+  "liveShows": {
+    "heading": "Nadchodzące koncerty",
+    "getTicketsCTA": "Kup bilety",
+    "upcomingShows": [
+      {
+        "id": "hevre",
+        "date": "04 Marca 2025",
+        "venue": "Hevre",
+        "city": "Kraków",
+        "country": "Polska",
+        "ticketsUrl": "https://form.jotform.com/KrakowMusic/NEW-concert?fbclid=IwZXh0bgNhZW0CMTEAAR0V75TA5DUHFebDif7KFyxEDpohH9BrxB647fEXlLqScEkSQdpUgY4BFWQ_aem_gec5o_kLdSCMAQG_DiAhjw"
+      }
+    ]
   },
   "videos": {
     "heading": "wideo",
@@ -95,6 +110,7 @@
     "bio": "bio",
     "music": "muzyka",
     "videos": "wideo",
+    "liveShows": "koncerty",
     "contact": "kontakt"
   },
   "privacyPolicy": {

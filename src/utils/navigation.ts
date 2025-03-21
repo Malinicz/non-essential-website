@@ -13,6 +13,9 @@ export function getNavigation({ locale }: { locale: Locale }) {
     videos: {
       url: `/${locale}/videos`,
     },
+    liveShows: {
+      url: `/${locale}/live-shows`,
+    },
     contact: {
       url: `/${locale}/contact`,
     },
@@ -45,6 +48,11 @@ export function getMenuItems(locale: Locale, dictionary: DictionaryType) {
       id: "videos",
       name: dictionary.navigation.videos,
       url: navigation.videos.url,
+    },
+    liveShows: {
+      id: "liveShows",
+      name: dictionary.navigation.liveShows,
+      url: navigation.liveShows.url,
     },
     contact: {
       id: "contact",
