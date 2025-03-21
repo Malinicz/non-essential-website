@@ -61,6 +61,7 @@ export default async function RootLayout({ children, params }: PropsType) {
     >
       <body>
         <div className={styles.bodyBackground} />
+        <div className={styles.bodyBackgroundTopLayer} />
         <div className={styles.layout}>
           <div className={cx(styles.topSection, "gap-x-l")}>
             <LazyPlayer copy={dictionary.player} />

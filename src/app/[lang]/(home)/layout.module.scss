@@ -127,6 +127,15 @@
   background-repeat: no-repeat;
 }
 
+.bodyBackgroundTopLayer {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0.8;
+  // background: linear-gradient(152.88deg, #f7b559 1.89%, #ca373d 94.22%);
+}
+
 .footer {
   grid-area: footer;
   position: relative;

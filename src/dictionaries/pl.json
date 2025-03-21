@@ -16,7 +16,7 @@
   },
   "home": {
     "heading": "Debiutancka EP 'First Shift' już dostępna!",
-    "upcomingShowTitle": "Nadchodzący koncert",
+    "upcomingShowTitle": "Nadchodzące koncerty",
     "streamingServicesTitle": "Posłuchaj...",
     "streamingServicesDescription": "...nasza muzyka jest dostępna na wszystkich najważniejszych platformach streamingowych.",
     "newsletterTitle": "N.E.W.S.letter"
@@ -59,7 +59,7 @@
     "upcomingShows": [
       {
         "id": "hevre",
-        "date": "04 Marca 2025",
+        "date": "2025-04-04T20:00:00+02:00",
         "venue": "Hevre",
         "coordinates": "https://maps.app.goo.gl/ZPw97rQY58v6ngcc8",
         "street": "Meiselsa 18",
