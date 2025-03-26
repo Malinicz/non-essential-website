@@ -24,7 +24,7 @@ export default async function Page({
           <ul>
             {dictionary.liveShows.upcomingShows.map((show) => (
               <li key={show.id}>
-                {formatDate(show.date)}{" "}
+                {formatDate(show.date, lang)}{" "}
                 <a href={show.coordinates} target="_blank">
                   {show.venue}
                 </a>
