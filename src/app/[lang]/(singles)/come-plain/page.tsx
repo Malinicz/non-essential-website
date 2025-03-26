@@ -9,7 +9,7 @@ import {
 import { Locale } from "@/i18n-config";
 import { getDictionary } from "@/get-dictionary";
 import { getAssetsUrls, getNavigation } from "@/utils";
-import albumCover from "./come-plain-cover.jpg";
+import albumCover from "../../_assets/come-plain-cover.jpg";
 import styles from "./page.module.scss";
 import { ExpandableText } from "../../_components";
 import { Viewport } from "next";

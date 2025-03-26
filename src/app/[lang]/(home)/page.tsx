@@ -9,6 +9,8 @@ import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
 import { getNavigation } from "@/utils";
 import { formatDate, isDateInThePast } from "@/utils/dateUtils";
+import comePlainCover from "../_assets/come-plain-cover.jpg";
+import Image from "next/image";
 
 export default async function Page({
   params: { lang },
@@ -55,7 +57,13 @@ export default async function Page({
         <section>
           <h2>{dictionary.home.streamingServicesTitle}</h2>
           <p>{dictionary.home.streamingServicesDescription}</p>
-          <StreamingServicesList />
+          <a
+            href={dictionary.singles.comePlain.preSave.preSaveUrl}
+            target="blank"
+          >
+            {dictionary.singles.comePlain.preSave.preSaveLabel}
+          </a>
+          {/* <StreamingServicesList /> */}
         </section>
         <section>
           <Newsletter
@@ -65,7 +73,13 @@ export default async function Page({
         </section>
       </div>
       <div className={styles.column2}>
-        <BandCampPlugin album="firstShift" size="large" multipleSongs />
+        <Image
+          src={comePlainCover}
+          alt={dictionary.home.comePlainCoverAlt}
+          className={styles.albumCover}
+          loading="lazy"
+        />
+        {/* <BandCampPlugin album="firstShift" size="large" multipleSongs /> */}
       </div>
     </div>
   );

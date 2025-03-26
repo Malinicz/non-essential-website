@@ -15,11 +15,12 @@
     }
   },
   "home": {
-    "heading": "Debiutancka EP 'First Shift' już dostępna!",
-    "upcomingShowTitle": "Nadchodzące koncerty",
+    "heading": "Nowy singiel nadchodzi...",
+    "upcomingShowTitle": "Koncerty",
     "streamingServicesTitle": "Posłuchaj...",
-    "streamingServicesDescription": "...nasza muzyka jest dostępna na wszystkich najważniejszych platformach streamingowych.",
-    "newsletterTitle": "N.E.W.S.letter"
+    "streamingServicesDescription": "...nasz najnowszy singiel Come Plain będzie dostępny na wszystkich najważniejszych platformach streamingowych. Zapisz się na odsłuch już dziś!",
+    "newsletterTitle": "N.E.W.S.letter",
+    "comePlainCoverAlt": "Okładka singla Come Plain przedstawiająca rozmazaną postać kobiety"
   },
   "bio": {
     "heading": "bio",

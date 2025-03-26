@@ -43,3 +43,12 @@
     justify-content: center;
   }
 }
+
+.albumCover {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  align-self: start;
+  border-radius: 8px;
+}
