@@ -1,9 +1,9 @@
-export function formatDate(isoDate: string) {
+export function formatDate(isoDate: string, language: string) {
   const date = new Date(isoDate);
   const timeOptions: Intl.DateTimeFormatOptions = {
     hour: "2-digit",
     minute: "2-digit",
-    timeZoneName: "short",
+    timeZoneName: "shortGeneric",
   };
   const dateOptions: Intl.DateTimeFormatOptions = {
     day: "2-digit",
@@ -11,8 +11,8 @@ export function formatDate(isoDate: string) {
     year: "numeric",
   };
 
-  const dateFormatter = new Intl.DateTimeFormat("pl-PL", dateOptions);
-  const timeFormatter = new Intl.DateTimeFormat("pl-PL", timeOptions);
+  const dateFormatter = new Intl.DateTimeFormat(language, dateOptions);
+  const timeFormatter = new Intl.DateTimeFormat(language, timeOptions);
 
   return `${dateFormatter.format(date)} (${timeFormatter.format(date)})`;
 }
