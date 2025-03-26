@@ -7,7 +7,7 @@ export function formatDate(isoDate: string, language: "en" | "pl") {
   const timeOptions: Intl.DateTimeFormatOptions = {
     hour: "2-digit",
     minute: "2-digit",
-    timeZoneName: "shortGeneric",
+    timeZone: "Europe/Warsaw",
   };
   const dateOptions: Intl.DateTimeFormatOptions = {
     day: "2-digit",
@@ -24,7 +24,7 @@ export function formatDate(isoDate: string, language: "en" | "pl") {
     timeOptions
   );
 
-  return `${dateFormatter.format(date)} (${timeFormatter.format(date)})`;
+  return `${dateFormatter.format(date)} (${timeFormatter.format(date)} CET)`;
 }
 
 export function isDateInThePast(isoDate: string) {
