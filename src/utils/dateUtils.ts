@@ -1,4 +1,8 @@
-export function formatDate(isoDate: string, language: string) {
+export function formatDate(isoDate: string, language: "en" | "pl") {
+  const languageCode = {
+    en: "en-GB",
+    pl: "pl-PL",
+  };
   const date = new Date(isoDate);
   const timeOptions: Intl.DateTimeFormatOptions = {
     hour: "2-digit",
@@ -11,8 +15,14 @@ export function formatDate(isoDate: string, language: string) {
     year: "numeric",
   };
 
-  const dateFormatter = new Intl.DateTimeFormat(language, dateOptions);
-  const timeFormatter = new Intl.DateTimeFormat(language, timeOptions);
+  const dateFormatter = new Intl.DateTimeFormat(
+    languageCode[language] ?? "en-EN",
+    dateOptions
+  );
+  const timeFormatter = new Intl.DateTimeFormat(
+    languageCode[language],
+    timeOptions
+  );
 
   return `${dateFormatter.format(date)} (${timeFormatter.format(date)})`;
 }
