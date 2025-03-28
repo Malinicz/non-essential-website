@@ -15,12 +15,11 @@
     }
   },
   "home": {
-    "heading": "Nowy singiel nadchodzi...",
+    "heading": "Nowy singiel 'Come Plain' już dostępny!",
     "upcomingShowTitle": "Koncerty",
     "streamingServicesTitle": "Posłuchaj...",
-    "streamingServicesDescription": "...nasz najnowszy singiel Come Plain będzie dostępny na wszystkich najważniejszych platformach streamingowych. Zapisz się na odsłuch już dziś!",
-    "newsletterTitle": "N.E.W.S.letter",
-    "comePlainCoverAlt": "Okładka singla Come Plain przedstawiająca rozmazaną postać kobiety"
+    "streamingServicesDescription": "...nasz najnowszy singiel Come Plain jest dostępny na wszystkich najważniejszych platformach streamingowych.",
+    "newsletterTitle": "N.E.W.S.letter"
   },
   "bio": {
     "heading": "bio",
