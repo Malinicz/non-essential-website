@@ -20,7 +20,9 @@ export default async function Page({
       </section>
       <section className="gap-y-l">
         {[
+          "comePlain" as const,
           "liveStudioCentrum" as const,
+          "weight" as const,
           "impossible" as const,
           "fire" as const,
           "people" as const,
