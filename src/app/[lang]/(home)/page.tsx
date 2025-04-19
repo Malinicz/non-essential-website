@@ -27,13 +27,6 @@ export default async function Page({
     (show) => isDateInThePast(show.date) === false
   );
 
-  console.log(
-    ">>> hasUpcomingShows",
-    hasUpcomingShows,
-    dictionary.liveShows.upcomingShows,
-    isDateInThePast(dictionary.liveShows.upcomingShows[0].date)
-  );
-
   return (
     <div className={styles.mainLayout}>
       <div className={styles.heading}>
