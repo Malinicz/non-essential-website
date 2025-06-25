@@ -7,6 +7,7 @@ import { CopyButton, Newsletter } from "../../_components";
 import { getNavigation } from "@/utils";
 import {
   IoLogoFacebook,
+  // IoLogoTiktok,
   IoLogoInstagram,
   IoMailOutline,
 } from "react-icons/io5";
@@ -53,6 +54,16 @@ export default async function Page({
               {socialMedia.facebook.name}
             </a>
           </div>
+          {/* <div className={cx(styles.contactInfoItem, "gap-x-xs")}>
+            <IoLogoTiktok size={25} />
+            <a
+              href={socialMedia.tikTok.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {socialMedia.tikTok.name}
+            </a>
+          </div> */}
         </div>
       </section>
       <section>

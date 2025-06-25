@@ -11,6 +11,10 @@ export const socialMedia = {
     name: "YouTube",
     url: "https://www.youtube.com/channel/UCDSE62iXTuOG2gLoUQrWK1A",
   },
+  // tikTok: {
+  //   name: "TikTok",
+  //   url: "https://www.tiktok.com/@nonessential.work",
+  // },
 };
 
 export const socialMediaList = Object.values(socialMedia);
