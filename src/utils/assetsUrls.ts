@@ -118,6 +118,18 @@ export function getAssetsUrls(): GetAssetsUrlsOutputType {
           "1TAjEReeVx71glc3pjbgLs2fcr2O_7Q_Z"
         ),
       },
+      telltale: {
+        type: "single",
+        name: "Telltale",
+        wav: getGoogleDriveDownloadUrl("1rJLzL5Y5g8q2BuuW-G5ZGHiReSNtWTXX"),
+        wav24bit: getGoogleDriveDownloadUrl(
+          "1xP6LhFG9lBdqtNTm02VJ4CorcyVIYX8t"
+        ),
+        mp3: getGoogleDriveDownloadUrl("1nluxzh3Ag-UT6xSsDgNq-cW8Jr50X7fD"),
+        albumCover: getGoogleDriveDownloadUrl(
+          "1WAJrc0n4xDRo17IS1yMcixgfGr8akPiF"
+        ),
+      },
     },
     photos: {
       pressPack: getGoogleDriveDownloadUrl("1RYdEm8UsDEG-dSA48S-hmnkKL-bdHIe1"),
