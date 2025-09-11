@@ -1,7 +1,7 @@
 export const socialMedia = {
   instagram: {
     name: "Instagram",
-    url: "https://www.instagram.com/non_essential_workers_n.e.w._",
+    url: "https://www.instagram.com/nonessentialworkers.music",
   },
   facebook: {
     name: "Facebook",
@@ -11,10 +11,10 @@ export const socialMedia = {
     name: "YouTube",
     url: "https://www.youtube.com/channel/UCDSE62iXTuOG2gLoUQrWK1A",
   },
-  // tikTok: {
-  //   name: "TikTok",
-  //   url: "https://www.tiktok.com/@nonessential.work",
-  // },
+  tikTok: {
+    name: "TikTok",
+    url: "https://www.tiktok.com/@nonessentialworkersmusic",
+  },
 };
 
 export const socialMediaList = Object.values(socialMedia);
