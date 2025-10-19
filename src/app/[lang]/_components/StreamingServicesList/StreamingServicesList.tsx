@@ -6,9 +6,9 @@ import styles from "./StreamingServicesList.module.scss";
 
 const ITEMS_LIMIT = 7;
 
-export function StreamingServicesList() {
+export function StreamingServicesList({ expanded }: { expanded?: boolean }) {
   const [streamingServicesListExpanded, setStreamingServicesListExpanded] =
-    React.useState(false);
+    React.useState(expanded);
 
   return (
     <ul className={styles.streamingServicesList}>

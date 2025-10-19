@@ -17,10 +17,22 @@ export default async function Page({
       <section>
         <h1>{dictionary.music.heading}</h1>
         <p>{dictionary.music.streamingServicesDescription}</p>
-        <StreamingServicesList />
+        <StreamingServicesList expanded />
       </section>
 
       <section className="gap-y-s">
+        <h2>{dictionary.music.singles.heading}</h2>
+        <div className={cx(styles.bandCampPluginSmall, "gap-y-s")}>
+          {[
+            "telltale" as const,
+            "comePlain" as const,
+            "impossible" as const,
+            "fire" as const,
+            "people" as const,
+          ].map((name) => (
+            <BandCampPlugin key={name} album={name} size="small" />
+          ))}
+        </div>
         <h2>{dictionary.music.albums.heading}</h2>
         <div className={cx(styles.bandCampPluginSmall, "gap-y-s")}>
           {["firstShift" as const].map((name) => (
@@ -35,17 +47,6 @@ export default async function Page({
               size="large"
               multipleSongs
             />
-          ))}
-        </div>
-        <h2>{dictionary.music.singles.heading}</h2>
-        <div className={cx(styles.bandCampPluginSmall, "gap-y-s")}>
-          {[
-            "comePlain" as const,
-            "impossible" as const,
-            "fire" as const,
-            "people" as const,
-          ].map((name) => (
-            <BandCampPlugin key={name} album={name} size="small" />
           ))}
         </div>
         <div className={cx(styles.bandCampPluginLarge, "gap-y-m")}>

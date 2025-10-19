@@ -127,6 +127,7 @@
 }
 
 .bodyBackgroundTopLayer {
+  display: none; // remove to show custom background gradient
   position: fixed;
   width: 100%;
   height: 100vh;

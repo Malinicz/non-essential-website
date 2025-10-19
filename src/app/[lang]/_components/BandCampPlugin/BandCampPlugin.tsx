@@ -2,7 +2,13 @@ import cx from "classnames";
 import styles from "./BandCampPlugin.module.scss";
 
 type PropsType = Readonly<{
-  album: "impossible" | "fire" | "people" | "firstShift" | "comePlain";
+  album:
+    | "impossible"
+    | "fire"
+    | "people"
+    | "firstShift"
+    | "comePlain"
+    | "telltale";
   size: "small" | "large";
   multipleSongs?: boolean;
 }>;
@@ -11,6 +17,7 @@ export function BandCampPlugin({ album, size, multipleSongs }: PropsType) {
   if (!album) return null;
 
   const albums = {
+    telltale: `https://bandcamp.com/EmbeddedPlayer/track=99735403/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=${size}/transparent=true/`,
     comePlain: `https://bandcamp.com/EmbeddedPlayer/track=4236780991/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=${size}/transparent=true/`,
     firstShift: `https://bandcamp.com/EmbeddedPlayer/album=3409098269/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=${size}/transparent=true/`,
     impossible: `https://bandcamp.com/EmbeddedPlayer/track=2895797269/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=${size}/transparent=true/`,

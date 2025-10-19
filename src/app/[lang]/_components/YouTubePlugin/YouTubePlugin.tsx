@@ -2,6 +2,7 @@ import styles from "./YouTubePlugin.module.scss";
 
 type PropsType = Readonly<{
   song:
+    | "telltale"
     | "comePlain"
     | "liveStudioCentrum"
     | "weight"
@@ -14,6 +15,7 @@ export function YouTubePlugin({ song }: PropsType) {
   if (!song) return null;
 
   const songs = {
+    telltale: "https://youtube.com/embed/AU9XAUZ7dIY?si=sltRdcSS6kM9vGte",
     comePlain: "https://www.youtube.com/embed/OmzKZPlfjJk?si=z4h_LeiYMU-qVKER",
     liveStudioCentrum:
       "https://www.youtube.com/embed/uXA4TYmWsG8?si=-cUp3LwJaiR_Xq_q",
